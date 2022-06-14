@@ -46,13 +46,12 @@ const DoctorList = () => {
 
     return (
         <>
-            <header className={styles.header}>HEADER</header>
             <div className={styles.container}>
                 <DoctorListTitle title="Dokter Umum" />
                 <div className={styles.doctor_list}>
                     {
                         doctorList.map((doctor, doctorIdx) => (
-                            <DoctorCard key={doctorIdx} name={doctor.name} rating={doctor.rating} price={doctor.price} photo={doctor.photo} />
+                            <DoctorCard className={styles.card} key={doctorIdx} name={doctor.name} rating={doctor.rating} price={doctor.price} photo={doctor.photo} />
                         ))
                     }
                 </div>
