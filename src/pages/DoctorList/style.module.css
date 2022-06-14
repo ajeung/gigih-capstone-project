@@ -1,0 +1,15 @@
+.header {
+    background-color: white;
+    padding: 60px;
+}
+
+.container {
+    display: flex;
+    margin: 1.4rem;
+}
+
+.doctor_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
