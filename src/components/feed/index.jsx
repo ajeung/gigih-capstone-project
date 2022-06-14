@@ -44,7 +44,7 @@ const FeedComponent = () => {
 
     return (
         <div className="feeds__wrapper">
-            <h1>Rekomendasi Bacaan</h1>
+            <h3>Rekomendasi Bacaan</h3>
 
             <Slider {...settings}>
                 <div className="feeds__content">
@@ -54,7 +54,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@ const FeedComponent = () => {
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
-                        <div className="feeds__date">date</div>
+                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
