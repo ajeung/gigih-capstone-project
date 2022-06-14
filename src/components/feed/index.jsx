@@ -50,7 +50,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -62,7 +62,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -74,7 +74,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -86,7 +86,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -98,7 +98,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -110,7 +110,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -122,7 +122,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
@@ -134,7 +134,7 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">link</a>
+                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a>Judul Artikel</a>
