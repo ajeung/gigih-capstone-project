@@ -44,27 +44,25 @@ const SearchDoctor = () => {
   ];
 
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.categories}>
-          <h3>Kategori Dokter</h3>
-          {categories.map((category, categoryIdx) => (
-            <DoctorCategory key={categoryIdx} title={category.title} />
-          ))}
-        </div>
-        <div className={styles.doctor_list}>
-          {doctorList.map((doctor, doctorIdx) => (
-            <DoctorCard
-              key={doctorIdx}
-              name={doctor.name}
-              rating={doctor.rating}
-              price={doctor.price}
-              photo={doctor.photo}
-            />
-          ))}
-        </div>
+    <div className={styles.container}>
+      <div className={styles.categories}>
+        <h3>Kategori Dokter</h3>
+        {categories.map((category, categoryIdx) => (
+          <DoctorCategory key={categoryIdx} title={category.title} />
+        ))}
       </div>
-    </>
+      <div className={styles.doctor_list}>
+        {doctorList.map((doctor, doctorIdx) => (
+          <DoctorCard
+            key={doctorIdx}
+            name={doctor.name}
+            rating={doctor.rating}
+            price={doctor.price}
+            photo={doctor.photo}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
