@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.container>input {
+    padding: 0.5rem;
+    width: 80%;
+    font-size: 28px;
+}
+
+.container>button {
+    margin-left: 2rem;
+    font-size: 20px;
+    width: 100px;
+    height: 44px;
+}
+
+.container ::placeholder {
+    font-size: 28px;
+    align-items: baseline;
+    opacity: 0.6;
+}

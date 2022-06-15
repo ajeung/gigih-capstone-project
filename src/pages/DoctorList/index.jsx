@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 import photo from "../../assets/img/woman.png";
 import DoctorCard from "../../components/DoctorCard";
 import DoctorListTitle from "../../components/DoctorListTitle";
+import Header from "../../components/Header";
 
 const DoctorList = () => {
 

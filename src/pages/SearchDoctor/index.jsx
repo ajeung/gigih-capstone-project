@@ -2,6 +2,7 @@ import photo from "../../assets/img/woman.png";
 import styles from "./style.module.css";
 import DoctorCard from "../../components/DoctorCard";
 import DoctorCategory from "../../components/DoctorCategory";
+import Header from "../../components/Header";
 
 const SearchDoctor = () => {
   console.log("kena");
