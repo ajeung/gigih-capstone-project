@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 const FeedComponent = () => {
     const settings = {
         className: "slider variable-width",
-        dots: true,
+        // dots: true,
+        arrows: false,
         infinite: true,
         centerMode: true,
         slidesToShow: 4,
@@ -53,7 +54,7 @@ const FeedComponent = () => {
                         <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
-                        <a>Judul Artikel</a>
+                        <a href="google.com">Judul Artikel</a>
                         <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
@@ -65,7 +66,7 @@ const FeedComponent = () => {
                         <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
-                        <a>Judul Artikel</a>
+                        <a href="google.com">Judul Artikel</a>
                         <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
@@ -77,7 +78,7 @@ const FeedComponent = () => {
                         <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
-                        <a>Judul Artikel</a>
+                        <a href="google.com">Judul Artikel</a>
                         <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
@@ -89,7 +90,7 @@ const FeedComponent = () => {
                         <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
-                        <a>Judul Artikel</a>
+                        <a href="google.com">Judul Artikel</a>
                         <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
@@ -101,43 +102,7 @@ const FeedComponent = () => {
                         <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
-                        <a>Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
-                        <div className="feeds__source">Sumber: </div>
-                    </div>
-                </div>
-
-                <div className="feeds__content">
-                    <div className="feeds__image">
-                        <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
-                    </div>
-                    <div className="feeds__info">
-                        <a>Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
-                        <div className="feeds__source">Sumber: </div>
-                    </div>
-                </div>
-
-                <div className="feeds__content">
-                    <div className="feeds__image">
-                        <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
-                    </div>
-                    <div className="feeds__info">
-                        <a>Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
-                        <div className="feeds__source">Sumber: </div>
-                    </div>
-                </div>
-
-                <div className="feeds__content">
-                    <div className="feeds__image">
-                        <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
-                    </div>
-                    <div className="feeds__info">
-                        <a>Judul Artikel</a>
+                        <a href="google.com">Judul Artikel</a>
                         <div className="feeds__date"><i class='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
