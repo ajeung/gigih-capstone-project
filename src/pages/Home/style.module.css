@@ -1,0 +1,28 @@
+.root {
+}
+
+.top {
+  background: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hintContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.divider:not(:last-child) {
+  display: block;
+  width: 5%;
+}
+
+/* .footer {
+  margin-top: 20px;
+  background: var(--light-green);
+  display: flex;
+  flex: 1;
+} */

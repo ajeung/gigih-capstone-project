@@ -1,21 +1,36 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./style.module.css";
-
+import * as React from "react";
 const Header = ({ title }) => {
-  const NAVIGATIONS = [
-    {
-      label: "Chat Dokter",
-      key: "/chat-doctor",
-    },
-    {
-      label: "Toko",
-      key: "/toko",
-    },
-    {
-      label: "Artikel",
-      key: "/artikel",
-    },
-  ];
+  const location = useLocation();
+  console.log(location);
+  const NAVIGATIONS = React.useMemo(() => {
+    const item = [
+      {
+        label: "Chat Dokter",
+        key: "/search-doctor",
+      },
+      {
+        label: "Toko",
+        key: "/",
+      },
+      {
+        label: "Artikel",
+        key: "/",
+      },
+    ];
+
+    if (
+      location.pathname === "/search-doctor" ||
+      location.pathname.startsWith("/doctor")
+    )
+      item.push({
+        label: "Reservasi",
+        key: "/",
+      });
+
+    return item;
+  }, [location.pathname]);
   return (
     <div className={styles.container}>
       <div className={styles.content}>
