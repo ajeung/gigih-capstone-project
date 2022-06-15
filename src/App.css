@@ -7,6 +7,7 @@
   --light-blue:#6bedd0;
   --light-green : #09dbac;
   --dark-green: #024032;
+  --pale-green: #a4cdc4;
 
   /* -----------------------------------------------*/
   --header-bg-color:White;
@@ -103,12 +104,11 @@ img {
 /*================ SCROLL BAR ================*/
 ::-webkit-scrollbar {
   width: .6rem;
-  border-radius: .5rem;
   background-color: var(--lite-grey);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--light-blue);
+  background-color: var(--pale-green);
   border-radius: .5rem;
 }
 
