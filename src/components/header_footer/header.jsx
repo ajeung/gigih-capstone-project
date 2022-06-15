@@ -9,11 +9,11 @@ const Header = () => {
                 </a>
             </div>
             <div class='header-link'>
-                <a href='#'>TOKO</a>
-                <a href='#'>CARI DOKTER</a>
-                <a href='#'>ARTIKEL</a>
+                <a href='#'>Beranda</a>
+                <a href='#'>Artikel</a>
+                <a href='#'>Cari Dokter</a>
                 <div className="header-button">
-                <button id='loginBtn'>Login</button>
+                    <button id='loginBtn'>Login</button>
                 </div>
             </div>
         </div>
