@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100%;
+    background-color: #09dbac;
+    height: 580px;
+    padding-top: 100px;
+}
+.card {
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    /* border: 1px solid; */
+}
+.profile_image {
+    margin: 20px 20px;
+    height: 390px;
+    width: 250px;
+    float: left;
+    border-radius: 15px;
+    /* border: 1px solid; */
+}
+.data_user{
+    margin-top: 50px;
+    float: left;
+    margin-left: 80px;
+}
+div ul li {
+    width: 400px;
+}
+div ul hr {
+    margin-bottom: 30px;
+}
