@@ -6,12 +6,12 @@ const DoctorCard = ({ name, rating, price, photo }) => {
 
     const navigate = useNavigate();
 
-    const handleClick = () => {
-        // Navigate to Doctor Detail
+    const handleClick = (id) => {
+        navigate(`/doctor/${id}`)
     };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} onClick={() => handleClick(1)}>
             <div className={styles.doctor_photo}>
                 <img src={photo} alt={`Doctor ${name}`} />
             </div>
@@ -25,7 +25,7 @@ const DoctorCard = ({ name, rating, price, photo }) => {
                     <img src={star} className={styles.star} alt="star" />
                 </div>
                 <div className={styles.btn_container}>
-                    <button type="button" onClick={handleClick}>Chat</button>
+                    <button type="button">Chat</button>
                 </div>
             </div>
         </div>

@@ -12,14 +12,11 @@ const GlobalRoutes = () => {
     <HomeLayout>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/doctor-list/:id" element={<DoctorList />} />
+        <Route path="/list-doctor/:id" element={<DoctorList />} />
         <Route path="/doctor/:id" element={<DoctorDetail />} />
         <Route path="/search-doctor" element={<SearchDoctor />} />
-<<<<<<< HEAD
-        <Route path="/payment" element={<Payment />} />
-=======
+        <Route path="/payment/:id" element={<Payment />} />
         <Route path="/payment/:id/price-detail" element={<PriceDetail />} />
->>>>>>> 15-june
       </Routes>
     </HomeLayout>
   );

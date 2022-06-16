@@ -1,4 +1,4 @@
-import { useLocation, useRoutes } from "react-router";
+import { useLocation } from "react-router";
 import Header from "../../components/Header";
 import HomeFooter from "../../components/HomeFooter";
 import SearchBar from "../../components/SearchBar";
@@ -10,8 +10,8 @@ const HomeLayout = (props) => {
 
   return (
     <div className={styles.container}>
-      {location.pathname !== "/" && location.pathname !== "/payment" && <Header />}
-      <SearchBar />
+      {location.pathname !== "/payment" && <Header />}
+      {location.pathname !== "/" && <SearchBar />}
       <div className={styles.app}>{children}</div>
       {location.pathname === "/" && <HomeFooter />}
     </div>

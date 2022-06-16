@@ -1,7 +1,11 @@
-import photo from "../../assets/img/woman.png"
+import { useNavigate } from "react-router-dom";
+import photo from "../../assets/img/woman.png";
 import styles from "./style.module.css";
 
 const PriceDetail = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className={styles.container}>
             <div className={styles.content}>
@@ -20,7 +24,7 @@ const PriceDetail = () => {
                 </div>
             </div>
             <div className={styles.comfirm_container}>
-                <button type="button">Konfirmasi</button>
+                <button type="button" onClick={() => navigate()}>Konfirmasi</button>
             </div>
         </div>
     );

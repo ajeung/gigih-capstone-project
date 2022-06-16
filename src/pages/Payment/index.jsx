@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./style.module.css";
 
 const Payment = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className={styles.root}>
       <div className={styles.container}>
@@ -49,7 +53,7 @@ const Payment = () => {
       </div>
       <div className={styles.stickyPay}>
         <div className={styles.button}>
-          <button type="button" style={{ marginRight: 0 }}>
+          <button type="button" style={{ marginRight: 0 }} onClick={() => navigate("price-detail")} >
             Bayar
           </button>
         </div>
