@@ -15,6 +15,19 @@ const Header = () => {
                 <div className="header-button">
                     <button id='loginBtn'>Login</button>
                 </div>
+
+                {/* LOGGED IN */}
+                {/* <div className="is__loggedin">
+                    <div className="profile__icon"></div>
+                    <div className="profile__options">
+                        <span className='profile__icon-arrow'><i className='bx bxs-down-arrow'></i></span>
+                        <div className="profile__icon-dropdown"> */}
+                            {/* <p>View Profile</p> Link to view profile page  */}
+                            {/* <p>Edit Profile</p> Link to edit profile page */}
+                            {/* <p>Logout</p>
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </div>
     )
