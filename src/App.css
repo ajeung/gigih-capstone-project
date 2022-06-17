@@ -467,3 +467,54 @@ button:hover {
   color: #a9a9a9;
   font-size: 14px;
 }
+
+.form__wrapper {
+  width: 100%;
+  background-color: #09dbac;
+  height: 750px;
+  padding-top: 100px;
+}
+
+.form__wrapper h2{
+  margin-left: 150px;
+  margin-bottom: 25px;
+}
+
+.form__card {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 75px;
+}
+
+.data__user label {
+  float: left;
+  width: 200px;
+  padding-right: 24px;
+}
+
+.data__user input {
+  float: left;
+  width: calc(100% - 200px);
+  margin-bottom: 20px;
+}
+
+.form__card button {
+  margin-top: 30px;
+}
+
+.profile__image {
+  margin-top: 40px;
+  height: 250px;
+  width: 250px;
+  float: left;
+  border-radius: 15px;
+}
+
+.data__user{
+  margin-top: 50px;
+  float: left;
+  margin-left: 80px;
+}
