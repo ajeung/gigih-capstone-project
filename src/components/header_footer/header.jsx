@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import logoHeader from '../../assets/logo.png';
 
 const Header = () => {
+    const [isExpanded, setIsExpanded] = useState(false)
+
     return (
         <div className="header">
             <div className="header-logo">
@@ -8,14 +11,37 @@ const Header = () => {
                 <img id='headerLogo' src={logoHeader} alt="Logo"/>
                 </a>
             </div>
-            <div class='header-link'>
-                <a href='#'>Beranda</a>
-                <a href='#'>Artikel</a>
-                <a href='#'>Cari Dokter</a>
-                <div className="header-button">
-                    <button id='loginBtn'>Login</button>
-                </div>
 
+            <a className='header__icon-arrow' 
+                onClick={() => { 
+                    setIsExpanded(!isExpanded) 
+                }}
+            >
+                <i class='bx bx-menu'></i>
+            </a>
+
+            <div className={
+                isExpanded ? "header-link expanded" : "header-link"
+            }
+
+            >
+                <ul>
+                    <li>
+                        <a href='#'>Beranda</a>
+                    </li>
+                    <li>
+                        <a href='#'>Artikel</a>
+                    </li>
+                    <li>
+                        <a href='#'>Cari Dokter</a>
+                    </li>
+                    <li>
+                        <div className="header-button">
+                            <button id='loginBtn'>Login</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
                 {/* LOGGED IN */}
                 {/* <div className="is__loggedin">
                     <div className="profile__icon"></div>
@@ -28,7 +54,6 @@ const Header = () => {
                         </div>
                     </div>
                 </div> */}
-            </div>
         </div>
     )
 }
