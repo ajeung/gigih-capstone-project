@@ -19,7 +19,14 @@ const DataUser = () => {
                     <hr />
                     <li>Berat badan :</li>
                     <hr />
+                    <li>Tinggi badan :</li>
+                    <hr />
                 </ul>
+                <div>
+                    <button>Edit</button>
+                    <button>Keluar</button>
+                </div>
+                
             </div>
         </div>
     </div>
