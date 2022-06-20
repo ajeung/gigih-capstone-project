@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.topFooter {
+  background: var(--light-green);
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.botFooter {
+  background: var(--dark-green);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0em 1em;
+}
+
+.botFooter a {
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+}
+.botFooter a:first-child {
+  margin-right: 20px;
+}
+
+.articleContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.linkContainer {
+  display: flex;
+  flex: 1;
+}
+
+.botFooter img,
+.botFooter a {
+  padding: 2px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article {
+  background: white;
+  height: fit-content;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+  color: var(--dark-green);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
