@@ -99,7 +99,7 @@ const Header = () => {
                     <p>Masukkan kode verifikasi yang telah dikirim ke nomor anda</p>
                     <p><span>Masukkan 6 digit kode</span></p>
                     <div className={styles.verification_input}>
-                        <input value={inputs[0].value} type={inputs[0].type} onChange={(e) => setInputs([...inputs], inputs[0].value = e.target.value)} />
+                        <input value={inputs[1].value} type={inputs[1].type} onChange={(e) => setInputs([...inputs], inputs[1].value = e.target.value)} />
                     </div>
                     <p className={styles.wrong_number}>Salah nomor ? <span>Ganti nomor telepon</span></p>
                     <div className={styles.verification} onClick={() => { setShowVerificationModal(false); handleLogin() }}>
