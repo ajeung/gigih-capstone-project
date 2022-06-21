@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content > h4 {
+    font-weight: 200;
+    font-size: 32px;
+    margin: 0.5rem 4rem;
+    padding: 1rem;
+}
+
+.content > p {
+    padding-bottom: 2rem;
+}
+
+.content span {
+    font-weight: bold;
+    color: #0eaf8c;
+}
+
+.handphone_input {
+    display: flex;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon>img {
+    width: 100%;
+}
+
+.handphone_input > p {
+    background-color: #0eaf8c;
+}

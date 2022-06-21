@@ -1,6 +1,6 @@
 import { useLocation } from "react-router";
-import Header from "../../components/Header";
-import HomeFooter from "../../components/HomeFooter";
+import Header from "../../components/header_footer/header";
+import HomeFooter from "../../components/header_footer/footer";
 import SearchBar from "../../components/SearchBar";
 import styles from "./style.module.css";
 
