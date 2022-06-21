@@ -8,6 +8,7 @@ import SearchDoctor from "../pages/SearchDoctor";
 import PriceDetail from "../pages/PriceDetail";
 import EditProfile from "../pages/EditProfile";
 import DataUser from "../pages/DataUser"
+import ViewProfile from "../pages/ViewProfile";
 
 const GlobalRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const GlobalRoutes = () => {
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="/payment/:id/price-detail" element={<PriceDetail />} />
         <Route path="/data-user" element={<DataUser />} />
+        <Route path="/view-profile" element={<ViewProfile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
       </Routes>
     </HomeLayout>

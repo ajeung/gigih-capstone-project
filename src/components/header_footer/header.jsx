@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import styles from "./style.module.css";
 import icon from "../../assets/img/arrow.png"
 import logoHeader from '../../assets/logo.png';
 import Modal from '../Modal';
 
 const Header = () => {
+
+    const navigate = useNavigate();
 
     const token = localStorage.getItem("token");
 
@@ -32,6 +35,8 @@ const Header = () => {
 
     const handleLogout = () => {
         localStorage.removeItem("token");
+
+        navigate("/");
     }
 
     return (
@@ -57,13 +62,13 @@ const Header = () => {
             >
                 <ul>
                     <li>
-                        <a href='#'>Beranda</a>
+                        <Link to="/">Beranda</Link>
                     </li>
                     <li>
-                        <a href='#'>Artikel</a>
+                        <Link to="">Artikel</Link>
                     </li>
                     <li>
-                        <a href='#'>Cari Dokter</a>
+                        <Link to="/search-doctor">Cari Dokter</Link>
                     </li>
                     <li>
                         <div className={`header-button ${token ? styles.hidden : ""}`}>
@@ -111,8 +116,8 @@ const Header = () => {
                 <div className="profile__options">
                     <span className='profile__icon-arrow'><i className='bx bxs-down-arrow'></i></span>
                     <div className={`profile__icon-dropdown ${showOptionDropdown ? "" : styles.hidden}`}>
-                        <p>View Profile</p>
-                        <p>Edit Profile</p>
+                        <p onClick={() => navigate("/view-profile")}>View Profile</p>
+                        <p onClick={() => navigate("/edit-profile")}>Edit Profile</p>
                         <p onClick={handleLogout}>Logout</p>
                     </div>
                 </div>

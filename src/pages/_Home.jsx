@@ -36,7 +36,7 @@ const Home = () => {
             </section>
 
             <section className='feeds'>
-                <FeedComponent/>
+                <FeedComponent />
             </section>
         </div>
     )
