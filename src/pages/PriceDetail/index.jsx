@@ -24,7 +24,7 @@ const PriceDetail = () => {
                 </div>
             </div>
             <div className={styles.comfirm_container}>
-                <button type="button" onClick={() => navigate()}>Konfirmasi</button>
+                <button type="button" onClick={() => navigate("/")}>Konfirmasi</button>
             </div>
         </div>
     );

@@ -32,15 +32,15 @@
   --main-font-type: "Poppins", sans-serif;
 
   /*================ SIZE ================*/
-  --font-large-size:70px;
-  --font-big-size:40px;
-  --font-normal-size:30px;
-  --font-small-size:20px;
-  --font-smaller-size:15px;
-  --font-xtra-small-size:12px;
-  --h1-font-size:40px;
-  --h2-font-size:40px;
-  --h3-font-size:30px;
+  --font-large-size: 70px;
+  --font-big-size: 40px;
+  --font-normal-size: 30px;
+  --font-small-size: 20px;
+  --font-smaller-size: 15px;
+  --font-xtra-small-size: 12px;
+  --h1-font-size: 40px;
+  --h2-font-size: 40px;
+  --h3-font-size: 30px;
 
   /*================ WEIGHT ================*/
   --font-weight-thin: 100;
@@ -127,16 +127,16 @@ img {
 /*================ HEADER n NAV ================*/
 .header {
   background-color: var(--header-bg-color);
-  color:var(--header-txt-color);
-  height: 52px; 
+  color: var(--header-txt-color);
+  height: 52px;
   width: 100%;
   position: fixed;
   padding: 0 25px;
   z-index: 2;
 }
 
-.header-logo{
-  float:left;
+.header-logo {
+  float: left;
   padding: 12px 0 6px 7px;
 }
 
@@ -178,7 +178,7 @@ img {
   margin: 0 1rem;
 }
 
-.header-link li a{
+.header-link li a {
   display: block;
   width: 100%;
   color: var(--main-font-color);
@@ -199,7 +199,7 @@ img {
   color: var(--light-green);
 }
 
-.header-button{
+.header-button {
   padding: 8px 7px 10px 0;
   position: absolute;
   right: 25px;
@@ -208,6 +208,7 @@ img {
 .is__loggedin {
   float: right;
   padding: 4px 0;
+  cursor: pointer;
 }
 
 .profile__options {
@@ -236,7 +237,6 @@ img {
 }
 
 .profile__icon-dropdown {
-  display: none;
   position: absolute;
   background-color: #fff;
   min-width: 130px;
@@ -246,10 +246,6 @@ img {
   top: 40px;
   left: auto;
   right: 0;
-}
-
-.profile__options:hover .profile__icon-dropdown {
-  display: block;
 }
 
 .profile__icon-dropdown p {
@@ -264,15 +260,15 @@ img {
 /*================ FOOTER ================*/
 .footer {
   background-color: var(--footer-bg-color);
-  color:var(--footer-txt-color);
-  height: 65px; 
+  color: var(--footer-txt-color);
+  height: 65px;
   width: 100%;
   padding: 0 25px;
 }
 
-.footer-logo{
-  float:right;
-  padding:10px 0;
+.footer-logo {
+  float: right;
+  padding: 10px 0;
 }
 
 #footerLogo {
@@ -358,7 +354,7 @@ button:hover {
 
 .menu__cards:hover {
   transform: scale(1.01, 1.01);
-  box-shadow: 0 0 2px rgba(0,0,0,0.05), 0 0 2px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.07), 0 8px 32px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.07), 0 8px 32px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07);
 }
 
 .menu__icon {
@@ -368,7 +364,8 @@ button:hover {
 }
 
 .feeds {
-  background: linear-gradient(180deg, var(--lite-grey), var(--light-green));;
+  background: linear-gradient(180deg, var(--lite-grey), var(--light-green));
+  ;
   padding: 7vh 0 5vh 0;
 }
 
@@ -409,11 +406,9 @@ button:hover {
   top: 0;
   left: 0;
   opacity: 0;
-  background: linear-gradient(
-    -35deg,
-    var(--light-blue) 0%,
-    rgba(255, 255, 255, 0.6) 100%
-  );
+  background: linear-gradient(-35deg,
+      var(--light-blue) 0%,
+      rgba(255, 255, 255, 0.6) 100%);
   transition: all 0.5s linear;
 }
 
@@ -434,7 +429,7 @@ button:hover {
 
 .feeds__content .feeds__info {
   margin: -8px 0;
-    padding: 0 10px;
+  padding: 0 10px;
   text-align: left;
 }
 
@@ -461,14 +456,14 @@ button:hover {
   color: #a9a9a9;
   font-size: 14px;
 }
-  
+
 /*================ BREAKPOINTS ================*/
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
   .header__icon-arrow {
     display: block;
   }
-  
+
   .header-link ul {
     display: none;
     position: absolute;
@@ -492,12 +487,12 @@ button:hover {
     width: 100%;
     padding: .5rem 0;
   }
-  
+
   .header-link li:hover {
     background-color: #09dbac;
     border: 1px solid var(--lite-grey);
   }
-  
+
   .header-link.expanded ul {
     display: block;
   }
@@ -505,7 +500,7 @@ button:hover {
 
 /* Small Devices & Medium Devices */
 @media screen and (max-width: 320px) {
-  .slick-slide > div {
+  .slick-slide>div {
     margin: 0 15px;
   }
 
@@ -519,9 +514,9 @@ button:hover {
 
   .header-logo {
     padding: 12px 0 8px 0;
-  } 
+  }
 
-  #headerLogo{
+  #headerLogo {
     width: 100px;
   }
 
@@ -529,17 +524,17 @@ button:hover {
     padding: 9px 0 8px 20px;
   }
 
-  .footer{
+  .footer {
     height: 85px;
     padding: 0 15px;
   }
 
-  .footer-logo{
+  .footer-logo {
     padding: 15px 0 8px 0;
     float: left;
   }
 
-  #footerLogo{
+  #footerLogo {
     width: 120px;
   }
 
@@ -550,7 +545,7 @@ button:hover {
     padding-top: 15px;
   }
 
-  .footer-link a{
+  .footer-link a {
     font-size: var(--font-xtra-small-size);
     line-height: 10px;
     padding: 5px 0;
@@ -625,7 +620,7 @@ button:hover {
 }
 
 @media screen and (min-width: 576px) {
-  .slick-slide > div {
+  .slick-slide>div {
     margin: 0 15px;
   }
 
@@ -654,14 +649,14 @@ button:hover {
 
 /* Large Devices */
 @media screen and (min-width: 992px) {
-  .slick-slide > div {
+  .slick-slide>div {
     margin: 0 26px;
   }
-  
+
   .slick-slide {
     width: 250px;
   }
-  
+
 
   .feeds__content {
     height: 250px;
@@ -669,14 +664,14 @@ button:hover {
 }
 
 @media screen and (min-width: 1337px) {
-  .slick-slide > div {
+  .slick-slide>div {
     margin: 0 26px;
   }
-  
+
   .slick-slide {
     width: 280px;
   }
-  
+
   .feeds__content {
     height: 250px;
   }
@@ -689,7 +684,7 @@ button:hover {
   padding-top: 100px;
 }
 
-.form__wrapper h2{
+.form__wrapper h2 {
   margin-left: 150px;
   margin-bottom: 25px;
 }
@@ -727,7 +722,7 @@ button:hover {
   border-radius: 15px;
 }
 
-.data__user{
+.data__user {
   margin-top: 50px;
   float: left;
   margin-left: 80px;

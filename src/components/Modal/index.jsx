@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from "./style.module.css";
 
-const HandphoneModal = ({ children, show, onClose }) => {
+const VerificationModal = ({ children, show, onClose }) => {
     const modalRef = useRef(null);
     useEffect(
         () => {
@@ -27,4 +27,4 @@ const HandphoneModal = ({ children, show, onClose }) => {
     );
 };
 
-export default HandphoneModal;
+export default VerificationModal;
