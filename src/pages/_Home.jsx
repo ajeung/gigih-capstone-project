@@ -1,7 +1,6 @@
 import FeedComponent from '../components/feed';
 import img_consultation from '../assets/consultation.jpg';
 import img_pharmacy from '../assets/pharmacy.jpg';
-import img_hospital from '../assets/hospital.jpg';
 import img_checkup from '../assets/checkup.jpg';
 
 
@@ -22,10 +21,6 @@ const Home = () => {
                         <div className='menu__cards'>
                             <img className='menu__icon' src={img_pharmacy} alt="" />
                             <p>Apotek</p>
-                        </div>
-                        <div className='menu__cards'>
-                            <img className='menu__icon' src={img_hospital} alt="" />
-                            <p>Reservasi RS</p>
                         </div>
                         <div className='menu__cards'>
                             <img className='menu__icon' src={img_checkup} alt="" />
