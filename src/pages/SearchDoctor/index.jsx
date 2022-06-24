@@ -6,18 +6,11 @@ import DoctorCategory from "../../components/DoctorCategory";
 const SearchDoctor = () => {
 
   const categories = [
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
-    { title: "Spesialis" },
+    { title: "Pengembangan Diri" },
+    { title: "Stress dan Kecemasan" },
+    { title: "Hubungan antar Manusia" },
+    { title: "Pekerjaan dan Pendidikan" },
+    { title: "Seksualitas dan Gender" },
   ];
 
   const doctorList = [
