@@ -23,6 +23,7 @@ const GlobalRoutes = () => {
         <Route path="/data-user" element={<DataUser />} />
         <Route path="/view-profile" element={<ViewProfile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/chat/:id" />
       </Routes>
     </HomeLayout>
   );

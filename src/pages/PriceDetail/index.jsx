@@ -1,10 +1,35 @@
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import photo from "../../assets/img/woman.png";
 import styles from "./style.module.css";
 
 const PriceDetail = () => {
 
     const navigate = useNavigate();
+
+    const handleComfirm = (id) => {
+        Swal.fire({
+            title: "Apakah Anda Yakin?",
+            text: "Anda tidak dapat kembali setelah konfirmasi!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#09dbac",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Konfirmasi"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Pembayaran Dikonfirmasi!",
+                    confirmButtonColor: "#09dbac",
+                    icon: "success"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        navigate(`/chat/${id}`);
+                    }
+                })
+            }
+        })
+    }
 
     return (
         <div className={styles.container}>
@@ -24,7 +49,7 @@ const PriceDetail = () => {
                 </div>
             </div>
             <div className={styles.comfirm_container}>
-                <button type="button" onClick={() => navigate("/")}>Konfirmasi</button>
+                <button type="button" onClick={() => handleComfirm(1)}>Konfirmasi</button>
             </div>
         </div>
     );
