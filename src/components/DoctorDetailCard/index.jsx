@@ -1,7 +1,19 @@
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import token from "../header_footer/header"
 import styles from "./style.module.css";
 const DoctorDetailCard = () => {
+  
+  const loginChecker = () => {
+    if(localStorage.getItem("token") === 'masukkantokenmukesini'){
+      //this.props.navigation.push("/payment/1");
+      navigate("/payment/1");
+    }
+    else {
+      alert("u need to login")
+    }
+}
+
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
@@ -38,11 +50,16 @@ const DoctorDetailCard = () => {
           </div>
           <div className={styles.actionContainer}>
             <div className={styles.buttonContainer}>
-              <Link to="/payment/1">
+              
+              
                 <div className={styles.button}>
-                  <button type="button">Chat</button>
+                  
+                    <button type="button" onClick={loginChecker}>Chat</button>
+                  {/* <Link to="/payment/1">
+                  </Link> */}
                 </div>
-              </Link>
+              
+
               <div className={styles.button}>
                 <button
                   type="button"
