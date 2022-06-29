@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomeLayout from "../layouts/HomeLayout";
 import DoctorDetail from "../pages/DoctorDetail";
 import DoctorList from "../pages/DoctorList";
-import Home from "../pages/Home";
+import Home from "../pages/_Home";
 import Payment from "../pages/Payment";
 import SearchDoctor from "../pages/SearchDoctor";
 import PriceDetail from "../pages/PriceDetail";
@@ -23,7 +23,6 @@ const GlobalRoutes = () => {
         <Route path="/data-user" element={<DataUser />} />
         <Route path="/view-profile" element={<ViewProfile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
-        <Route path="/chat/:id" />
       </Routes>
     </HomeLayout>
   );
