@@ -4,12 +4,13 @@ import styles from "./style.module.css";
 import icon from "../../assets/img/arrow.png"
 import logoHeader from '../../assets/logo.png';
 import Modal from '../Modal';
+import {firebaseAuth, googleProvider} from '../../configFB/firebase'
 
 const Header = () => {
 
     const navigate = useNavigate();
 
-    const token = localStorage.getItem("token");
+    var token = localStorage.getItem("token");
 
     const [isExpanded, setIsExpanded] = useState(false)
     const [inputs, setInputs] = useState([
@@ -29,8 +30,13 @@ const Header = () => {
     const [showVerificationModal, setShowVerificationModal] = useState(false);
     const [showOptionDropdown, setShowOptionDropdown] = useState(false);
 
+    const loginWithGoogle = () => {
+        firebaseAuth.signInWithPopup(googleProvider);
+    }
+
     const handleLogin = () => {
         localStorage.setItem("token", "masukkantokenmukesini");
+        console.log(token);
     }
 
     const handleLogout = () => {
@@ -90,6 +96,11 @@ const Header = () => {
                             <img src={icon} alt="Enter" />
                         </div>
                     </div>
+                    <div onClick={() => { setShowHanphoneModal(false); loginWithGoogle(); handleLogin() }}>
+                        <button className="sign-in">Login with Google</button>
+                    </div>
+                    
+                        
                 </div>
             </Modal>
 
@@ -126,4 +137,5 @@ const Header = () => {
     )
 }
 
+// export const newToken = token;
 export default Header
