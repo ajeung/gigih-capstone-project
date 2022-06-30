@@ -10,7 +10,7 @@ const FeedComponent = () => {
         infinite: true,
         centerMode: true,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         variableWidth: true,
         autoplay: true,
         speed: 2000,
@@ -51,11 +51,11 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
+                        <a href="google.com" className="over-layer"><i className='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a href="google.com">Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
+                        <div className="feeds__date"><i className='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -63,11 +63,11 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
+                        <a href="google.com" className="over-layer"><i className='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a href="google.com">Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
+                        <div className="feeds__date"><i className='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -75,11 +75,11 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
+                        <a href="google.com" className="over-layer"><i className='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a href="google.com">Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
+                        <div className="feeds__date"><i className='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -87,11 +87,11 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
+                        <a href="google.com" className="over-layer"><i className='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a href="google.com">Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
+                        <div className="feeds__date"><i className='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>
@@ -99,11 +99,11 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer"><i class='bx bx-link' ></i></a>
+                        <a href="google.com" className="over-layer"><i className='bx bx-link' ></i></a>
                     </div>
                     <div className="feeds__info">
                         <a href="google.com">Judul Artikel</a>
-                        <div className="feeds__date"><i class='bx bx-time-five'></i></div>
+                        <div className="feeds__date"><i className='bx bx-time-five'></i></div>
                         <div className="feeds__source">Sumber: </div>
                     </div>
                 </div>

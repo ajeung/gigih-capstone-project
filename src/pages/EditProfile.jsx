@@ -9,19 +9,19 @@ const EditProfile = () => {
                     </div>
                     <div className="data__user">
                         <form>
-                            <label for="firstName" class="first-name">First Name</label>
+                            <label for="firstName" className="first-name">First Name</label>
                             <input id="firstName" type="text"></input>
                             <br></br>
-                            <label for="lastName" class="last-name">Last Name</label>
+                            <label for="lastName" className="last-name">Last Name</label>
                             <input id="lastName" type="text"></input>
                             <br></br>
-                            <label for="ttl" class="ttl">Tanggal Lahir</label>
+                            <label for="ttl" className="ttl">Tanggal Lahir</label>
                             <input id="ttl" type="date"></input>
                             <br></br>
-                            <label for="email" class="email">Email</label>
+                            <label for="email" className="email">Email</label>
                             <input id="email" type="text"></input>
                             <br></br>
-                            <label for="password" class="password">Password</label>
+                            <label for="password" className="password">Password</label>
                             <input id="password" type="password"></input>
                             <br></br>
                             <button>Edit Profile</button>
