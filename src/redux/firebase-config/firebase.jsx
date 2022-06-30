@@ -1,9 +1,6 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore';
-// import { rootReducer } from '../reducer/reducers';
-// import { createFirestoreInstance } from 'redux-firestore';
-// import { configureStore } from '@reduxjs/toolkit';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAyl7zNqJ4MY-hcwel7jYT97rq6S020GhU",
@@ -21,29 +18,3 @@ const auth = firebase.auth()
 const provider = new firebase.auth.GoogleAuthProvider()
 
 export { auth, provider }
-
-// const rrfConfig = {
-//   userProfile: "users",
-//   useFirestoreForProfile: true,
-// };
-
-// const init = firebase.initializeApp(firebaseConfig);
-// const fb = firebase.firestore();
-
-// const initialState = {};
-// const store = configureStore(rootReducer, initialState);
-
-// export const firebaseConfiguration = {
-//   firebaseConfig,
-//   rrfConfig,
-//   initialState,
-//   init,
-//   fb,
-//   store,
-//   rrfProps: {
-//     firebase,
-//     config: rrfConfig,
-//     dispatch: store.dispatch,
-//     createFirestoreInstance,
-//   }
-// }
