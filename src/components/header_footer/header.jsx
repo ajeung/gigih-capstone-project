@@ -1,18 +1,29 @@
+import styles from "./style.module.css";
+import logoHeader from '../../assets/logo.png';
+
+import Modal from '../Modal';
+import { auth, provider } from '../../redux/firebase-config/firebase'
+import { setActiveUser, setUserLogoutState, selectUserName, selectUserEmail } from "../../redux/reducer/reducers";
+
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import styles from "./style.module.css";
-import icon from "../../assets/img/arrow.png"
-import logoHeader from '../../assets/logo.png';
-import Modal from '../Modal';
-// import {firebaseAuth, googleProvider} from '../../configFB/firebase'
 import { useFirebase } from "react-redux-firebase";
+import { useDispatch, useSelector } from "react-redux";
+
+// import {firebaseAuth, googleProvider} from '../../configFB/firebase'
+
+
 
 const Header = () => {
 
     const firebase = useFirebase();
     const navigate = useNavigate();
 
-    var token = localStorage.getItem("token");
+    const dispatch = useDispatch()
+    const userName = useSelector(selectUserName)
+    const userEmail = useSelector(selectUserEmail)
+
+    // var token = localStorage.getItem("token");
 
     const [isExpanded, setIsExpanded] = useState(false)
     const [inputs, setInputs] = useState([
@@ -32,27 +43,41 @@ const Header = () => {
     const [showVerificationModal, setShowVerificationModal] = useState(false);
     const [showOptionDropdown, setShowOptionDropdown] = useState(false);
 
-    const loginWithGoogle = () => {
-        // firebaseAuth.signInWithPopup(googleProvider);
-        firebase
-            .login({
-                provider: "google",
-                type: "popup",
-            })
-            .then(() => {
-                navigate("/")
-            });
-    }
+    // const loginWithGoogle = () => {
+    //     // firebaseAuth.signInWithPopup(googleProvider);
+
+    //     // firebase
+    //     //     .login({
+    //     //         provider: "google",
+    //     //         type: "popup",
+    //     //     })
+    //     //     .then(() => {
+    //     //         navigate("/")
+    //     //     });
+    // }
 
     const handleLogin = () => {
-        localStorage.setItem("token", "masukkantokenmukesini");
-        console.log(token);
+        auth.signInWithPopup(provider).then((result) => {
+            dispatch(setActiveUser({
+                userName: result.user.displayName,
+                userEmail: result.user.email,
+            }))
+        })
+
+        // localStorage.setItem("token", "masukkantokenmukesini");
+        // console.log(token);
     }
 
     const handleLogout = () => {
-        localStorage.removeItem("token");
+        auth.signOut().then(() => {
+                dispatch(setUserLogoutState())
+            })
+            .catch((err) => 
+                alert(err.message)
+            )
 
-        navigate("/");
+        // localStorage.removeItem("token");
+        // navigate("/");
     }
 
     return (
@@ -68,7 +93,7 @@ const Header = () => {
                     setIsExpanded(!isExpanded)
                 }}
             >
-                <i class='bx bx-menu'></i>
+                <i className='bx bx-menu'></i>
             </a>
 
             <div className={
@@ -97,7 +122,7 @@ const Header = () => {
             <Modal show={showHanphoneModal} onClose={() => setShowHanphoneModal(false)}>
                 <div className={styles.content}>
                     <h4>Login ke dalam SoluHouse</h4>
-                    <p><span>Masukkan nomor telepon</span> untuk menggunakan layanan dari SoluHouse</p>
+                    {/* <p><span>Masukkan nomor telepon</span> untuk menggunakan layanan dari SoluHouse</p>
                     <p><span>Masukkan nomor telepon</span></p>
                     <div className={styles.handphone_input}>
                         <p>+62</p>
@@ -105,8 +130,8 @@ const Header = () => {
                         <div className={styles.icon} onClick={() => { setShowVerificationModal(true); setShowHanphoneModal(false) }} >
                             <img src={icon} alt="Enter" />
                         </div>
-                    </div>
-                    <div onClick={() => { setShowHanphoneModal(false); loginWithGoogle(); handleLogin() }}>
+                    </div> */}
+                    <div onClick={() => { setShowHanphoneModal(false); handleLogin() }}>
                         <button className="sign-in">Login with Google</button>
                     </div>
                     
@@ -114,7 +139,7 @@ const Header = () => {
                 </div>
             </Modal>
 
-            <Modal show={showVerificationModal} onClose={() => setShowVerificationModal(false)}>
+            {/* <Modal show={showVerificationModal} onClose={() => setShowVerificationModal(false)}>
                 <div className={styles.content}>
                     <h4>Login ke dalam SoluHouse</h4>
                     <p>Masukkan kode verifikasi yang telah dikirim ke nomor anda</p>
@@ -130,7 +155,7 @@ const Header = () => {
                         <p><span>Verifikasi</span></p>
                     </div>
                 </div>
-            </Modal>
+            </Modal> */}
 
             <div className={`is__loggedin ${token ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
                 <div className="profile__icon"></div>
