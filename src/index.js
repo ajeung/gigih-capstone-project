@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { ReactReduxFirebaseProvider } from "react-redux-firebase";
+import { firebaseConfiguration } from './redux/firebase-config/firebase';
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import App from "./App";
@@ -8,11 +11,15 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <Provider store={firebaseConfiguration.store}>
+      <ReactReduxFirebaseProvider {...firebaseConfiguration.rrfProps}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+      </ReactReduxFirebaseProvider>
+    </Provider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

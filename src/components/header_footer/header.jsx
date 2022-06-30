@@ -4,10 +4,12 @@ import styles from "./style.module.css";
 import icon from "../../assets/img/arrow.png"
 import logoHeader from '../../assets/logo.png';
 import Modal from '../Modal';
-import {firebaseAuth, googleProvider} from '../../configFB/firebase'
+// import {firebaseAuth, googleProvider} from '../../configFB/firebase'
+import { useFirebase } from "react-redux-firebase";
 
 const Header = () => {
 
+    const firebase = useFirebase();
     const navigate = useNavigate();
 
     var token = localStorage.getItem("token");
@@ -31,7 +33,15 @@ const Header = () => {
     const [showOptionDropdown, setShowOptionDropdown] = useState(false);
 
     const loginWithGoogle = () => {
-        firebaseAuth.signInWithPopup(googleProvider);
+        // firebaseAuth.signInWithPopup(googleProvider);
+        firebase
+            .login({
+                provider: "google",
+                type: "popup",
+            })
+            .then(() => {
+                navigate("/")
+            });
     }
 
     const handleLogin = () => {
@@ -138,4 +148,7 @@ const Header = () => {
 }
 
 // export const newToken = token;
+{/* <a href={`${process.env.SH_APP_AUTH_LINK}&client_id=${process.env.SH_APP_CLIENT_ID}&redirect_uri=${process.env.SH_APP_REDIRECT_URI}&state=${process.env.SH_APP_STATE}&scope=${process.env.SH_APP_SCOPE}&context_uri=${process.env.SH_APP_CONTEXT_URI}`}>
+    <button className="sign-in">Login with Google</button>
+</a> */}
 export default Header
