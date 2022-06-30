@@ -20,21 +20,8 @@ const Header = () => {
     const userEmail = useSelector(selectUserEmail)
 
     const [isExpanded, setIsExpanded] = useState(false)
-    const [inputs, setInputs] = useState([
-        {
-            name: "handphone",
-            type: "text",
-            value: ""
-        },
-        {
-            name: "verification",
-            type: "text",
-            value: ""
-        },
-    ])
 
     const [showHanphoneModal, setShowHanphoneModal] = useState(false);
-    const [showVerificationModal, setShowVerificationModal] = useState(false);
     const [showOptionDropdown, setShowOptionDropdown] = useState(false);
 
     const handleLogin = () => {
