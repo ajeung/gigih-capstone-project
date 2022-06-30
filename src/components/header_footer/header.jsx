@@ -112,7 +112,7 @@ const Header = () => {
                         <Link to="/search-doctor">Cari Dokter</Link>
                     </li>
                     <li>
-                        <div className={`header-button ${token ? styles.hidden : ""}`}>
+                        <div className={`header-button ${userName ? styles.hidden : ""}`}>
                             <button id='loginBtn' onClick={() => setShowHanphoneModal(true)}>Login</button>
                         </div>
                     </li>
@@ -157,7 +157,7 @@ const Header = () => {
                 </div>
             </Modal> */}
 
-            <div className={`is__loggedin ${token ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
+            <div className={`is__loggedin ${userName ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
                 <div className="profile__icon"></div>
                 <div className="profile__options">
                     <span className='profile__icon-arrow'><i className='bx bxs-down-arrow'></i></span>
