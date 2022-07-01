@@ -73,12 +73,10 @@ const Header = () => {
                     <li>
                         <Link to="/search-doctor">Cari Dokter</Link>
                     </li>
-                    <li>
-                        <div className={`header-button ${userName ? styles.hidden : ""}`}>
-                            <button id='loginBtn' onClick={() => setShowHanphoneModal(true)}>Login</button>
-                        </div>
-                    </li>
                 </ul>
+            </div>
+            <div className={`header-button ${userName ? styles.hidden : ""}`}>
+                <button id='loginBtn' onClick={() => setShowHanphoneModal(true)}>Login</button>
             </div>
 
             <Modal show={showHanphoneModal} onClose={() => setShowHanphoneModal(false)}>

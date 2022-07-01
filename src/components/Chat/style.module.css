@@ -82,7 +82,7 @@ input {
     padding: 0 10px;
 }
 
-button {
+#chatButton{
     background-color: #282c34; /* Green */
     border: none;
     color: white;
@@ -94,7 +94,7 @@ button {
     font-size: 1.25rem;
 }
 
-button:disabled {
+#chatButton:disabled{
     opacity: 0.5;
     cursor: not-allowed;
 }
@@ -114,8 +114,7 @@ ul, li {
     text-align: left;
     list-style: none;
 }
-
-p {
+#tagPChat{
     max-width: 500px;
     margin-bottom: 12px;
     line-height: 24px;
@@ -125,7 +124,6 @@ p {
     color: white;
     text-align: center;
 }
-
 .message {
     display: flex;
     align-items: center;
@@ -146,7 +144,7 @@ p {
     color: black;
 }
 
-img {
+#chatImage {
     width: 40px;
     height: 40px;
     border-radius: 50%;

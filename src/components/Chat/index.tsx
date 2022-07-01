@@ -125,7 +125,7 @@ const ChatMessage = (props) => {
           photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
         }
       />
-      <p>{text}</p>
+      <p id="tagPChat">{text}</p>
     </div>
   );
 };

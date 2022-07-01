@@ -10,7 +10,8 @@
   background-color: white;
   padding: 1.3em 2.3em;
   align-items: center;
-  width: 90%;
+  width: auto;
+  margin-top: 100px;
 }
 
 .left {
