@@ -1,52 +1,52 @@
 .modal__wrap {
-    position: fixed;
-    display: block;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 105vh;
-    z-index: 100;
-    overflow-x: hidden;
-    background-color: rgba(0, 0, 0, 0.1);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 250ms 700ms ease;
+  position: fixed;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 105vh;
+  z-index: 100;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 250ms 700ms ease;
 }
 
 .visible {
-    pointer-events: auto;
-    opacity: 1;
-    transition: all 300ms ease-in-out;
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
 }
 
 .modal {
-    overflow-x: hidden;
-    position: relative;
-    display: block;
-    width: 37vw;
-    height: 70%;
-    min-height: 300px;
-    min-width: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    align-self: center;
-    box-shadow: 12px 12px 25px 10px rgba(129, 129, 129, 0.25);
-    opacity: 0;
-    transform: scale(0.6);
-    transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
-    transform: scale(0);
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+  width: 37vw;
+  height: 70%;
+  min-height: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  align-self: center;
+  box-shadow: 12px 12px 25px 10px rgba(129, 129, 129, 0.25);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+  transform: scale(0);
 }
 
 .visible .modal {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }

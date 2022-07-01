@@ -1,7 +1,5 @@
 import "./App.css";
-
-import { Provider } from 'react-redux';
-
+import { Provider } from "react-redux";
 import GlobalRoutes from "./router";
 import store from "./redux/store/store";
 
@@ -18,7 +16,7 @@ const AppContainer = () => {
     <Provider store={store}>
       <App />
     </Provider>
-  )
-}
+  );
+};
 
 export default AppContainer;

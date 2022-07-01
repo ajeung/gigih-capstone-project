@@ -1,19 +1,7 @@
 import { useNavigate } from "react-router";
-// import { Link } from "react-router-dom";
-// import token from "../header_footer/header"
-// import userAuth from '../../components/header_footer/header'
 import styles from "./style.module.css";
-const DoctorDetailCard = () => {
-  // const loginChecker = () => {
-  //   if(userAuth){
-  //     //this.props.navigation.push("/payment/1");
-  //     navigate("/payment/1");
-  //   }
-  //   else {
-  //     alert("u need to login")
-  //   }
-// }
 
+const DoctorDetailCard = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
@@ -50,16 +38,11 @@ const DoctorDetailCard = () => {
           </div>
           <div className={styles.actionContainer}>
             <div className={styles.buttonContainer}>
-              
-              
-                <div className={styles.button}>
-                  
-                    <button type="button" onClick={() => navigate("/payment/1")}>Chat</button>
-                  {/* <Link to="/payment/1">
-                  </Link> */}
-                </div>
-              
-
+              <div className={styles.button}>
+                <button type="button" onClick={() => navigate("/payment/1")}>
+                  Chat
+                </button>
+              </div>
               <div className={styles.button}>
                 <button
                   type="button"

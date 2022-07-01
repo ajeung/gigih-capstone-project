@@ -1,18 +1,18 @@
 .title {
-    border-right: 3px solid rgb(170, 170, 170);
-    padding: 15px 30px;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 4rem;
-    padding-left: 0.8rem;
-    width: 57%;
+  border-right: 3px solid rgb(170, 170, 170);
+  padding: 15px 30px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+  padding-left: 0.8rem;
+  width: 57%;
 }
 
-.title>h2 {
-    color: rgb(145, 145, 145);
-    width: 75%;
-    font-size: 56px;
-    font-weight: 100;
-    margin: 0 auto;
-    text-align: center;
+.title > h2 {
+  color: rgb(145, 145, 145);
+  width: 75%;
+  font-size: 56px;
+  font-weight: 100;
+  margin: 0 auto;
+  text-align: center;
 }

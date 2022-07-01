@@ -20,11 +20,13 @@ const GlobalRoutes = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/list-doctor/:id" element={<DoctorList />} />
-        <Route path="/doctor/:id" element={
+        <Route
+          path="/doctor/:id"
+          element={
             <ProtectedRoute>
               <DoctorDetail />
             </ProtectedRoute>
-          } 
+          }
         />
         <Route path="/search-doctor" element={<SearchDoctor />} />
         <Route path="/payment/:id" element={<Payment />} />
@@ -38,16 +40,16 @@ const GlobalRoutes = () => {
   );
 };
 
-const ProtectedRoute = ({children}) => {
-  const userName = useSelector(selectUserName)
-  const userEmail = useSelector(selectUserEmail)
+const ProtectedRoute = ({ children }) => {
+  const userName = useSelector(selectUserName);
+  const userEmail = useSelector(selectUserEmail);
 
-  if(!userName) {
-    alert("Silakan lakukan Login terlebih dahulu.")
-    return <Navigate to="/" />
+  if (!userName) {
+    alert("Silakan lakukan Login terlebih dahulu.");
+    return <Navigate to="/" />;
   }
 
-  return children
-}
+  return children;
+};
 
 export default GlobalRoutes;

@@ -10,12 +10,12 @@ const Card = ({ item }) => {
         <div className={styles.listOfDoctor}>
           {item.map((Val) => {
             return (
-                <DoctorCard
-                    className={styles.card}
-                    key={Val.id}
-                    name={Val.name}
-                    photo={photo}
-                />
+              <DoctorCard
+                className={styles.card}
+                key={Val.id}
+                name={Val.name}
+                photo={photo}
+              />
             );
           })}
         </div>

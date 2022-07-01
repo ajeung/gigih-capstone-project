@@ -48,8 +48,6 @@ const Home = () => {
           </React.Fragment>
         ))}
       </div>
-
-      {/* <div className={styles.footer}>sdad</div> */}
     </div>
   );
 };
