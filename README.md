@@ -16,7 +16,7 @@ This application was build using [React.js](https://reactjs.org/docs/getting-sta
 
 * NodeJs
   [Node.js Installer](https://nodejs.org/en/download/)
-* npm
+* ![npm](https://img.shields.io/npm/v/npm?logo=npm&style=social)
   ```sh
   npm install npm@latest -g
   ```
@@ -38,3 +38,13 @@ This application was build using [React.js](https://reactjs.org/docs/getting-sta
 
 ## Features
 ### 
+
+## Authors and Acknowledgment
+* UI/ UX
+    Dimas Afrizal [KM_G2FE1241]
+* Project Manager
+    Adawiyyah Latifah [KM_G2FE2188]
+* Frontend Team
+    Ajeung Angsaweni [KM_G2FE2170]
+    Muhhabbir Cawash [KM_G2FE4286]
+    Rizki Putra Aulia [KM_G2FE6246]
