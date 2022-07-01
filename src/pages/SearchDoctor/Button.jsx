@@ -1,8 +1,10 @@
 import React from "react";
 
+import styles from "./style.module.css";
+
 const Buttons = ({ filterItem, setItem, menuItems }) => {
     return (
-        <>
+        <div className={styles.kategoriDoctor}>
           {menuItems.map((doctor, id) => {
             return (
               <button
@@ -13,7 +15,7 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
               </button>
             );
           })}
-        </>
+        </div>
     );
 };
 

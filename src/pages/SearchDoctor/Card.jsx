@@ -7,7 +7,7 @@ const Card = ({ item }) => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row justify-content-center">
+        <div className={styles.listOfDoctor}>
           {item.map((Val) => {
             return (
                 <DoctorCard

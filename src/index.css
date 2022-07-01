@@ -103,11 +103,14 @@ img {
   position: fixed;
 }
 .header-logo {
-  float: left;
-  padding: 10px 20px 0 20px;
+  margin-left: 20px;
 }
 #headerLogo {
   width: 124px;
+}
+#headerLogo img{
+  height: auto;
+  border-radius: 100%;
 }
 .header-link {
   margin-left: 200px;
@@ -127,10 +130,6 @@ img {
   border-radius: 24px;
 }
 
-.header-button {
-  float: right;
-  padding: 10px;
-}
 
 /*-----------------------------------------FOOTER */
 .footer {

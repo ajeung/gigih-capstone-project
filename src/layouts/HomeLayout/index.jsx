@@ -11,7 +11,6 @@ const HomeLayout = (props) => {
   return (
     <div className={styles.container}>
       {location.pathname !== "/payment" && <Header />}
-      {location.pathname !== "/" && <SearchBar />}
       <div className={styles.app}>{children}</div>
       {location.pathname === "/" && <HomeFooter />}
     </div>
