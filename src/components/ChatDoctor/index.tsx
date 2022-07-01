@@ -6,6 +6,7 @@ import "firebase/compat/auth";
 import "firebase/compat/analytics";
 import { firebaseApp } from "redux/firebase-config/firebase";
 import * as React from "react";
+import doctorData from "../../assets/data/data_dokter";
 
 interface Props {}
 export default function ChatDoctor() {
@@ -40,6 +41,14 @@ export default function ChatDoctor() {
     [chats.length, database, input, name]
   );
 
+  const specialist = React.useMemo(() => {
+    const doctor = doctorData.filter((item) => item.name === name);
+    if (doctor.length > 0) {
+      return doctor[0].speciality;
+    }
+    return "";
+  }, [name]);
+
   return (
     <div
       style={{ display: "flex", flex: 1, flexDirection: "column", padding: 4 }}
@@ -50,13 +59,14 @@ export default function ChatDoctor() {
         </div>
         <div>
           <h4>{name}</h4>
-          <div className={styles.rating}>
+          <h5>{specialist}</h5>
+          {/* <div className={styles.rating}>
             <img src="/star.png" className={styles.star} alt="star" />
             <img src="/star.png" className={styles.star} alt="star" />
             <img src="/star.png" className={styles.star} alt="star" />
             <img src="/star.png" className={styles.star} alt="star" />
             <img src="/star.png" className={styles.star} alt="star" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.content}>

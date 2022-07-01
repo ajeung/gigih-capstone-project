@@ -2,6 +2,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import photo from "../../assets/img/woman.png";
 import styles from "./style.module.css";
+import * as React from "react";
+import doctorData from "../../assets/data/data_dokter";
 
 const PriceDetail = () => {
   const navigate = useNavigate();
@@ -31,6 +33,13 @@ const PriceDetail = () => {
       }
     });
   };
+  const specialist = React.useMemo(() => {
+    const doctor = doctorData.filter((item) => item.name === name);
+    if (doctor.length > 0) {
+      return doctor[0].speciality;
+    }
+    return "";
+  }, [name]);
 
   return (
     <div className={styles.container}>
@@ -40,8 +49,8 @@ const PriceDetail = () => {
             <img src={photo} alt="Doctor" />
           </div>
           <div className={styles.doctor_detail}>
-            <h4>Dr. Dimas Afrizal</h4>
-            <p>Dokter Umum</p>
+            <h4>{name}</h4>
+            <p>{specialist}</p>
           </div>
         </div>
         <div className={styles.price_card}>
