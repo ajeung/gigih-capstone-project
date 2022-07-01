@@ -25,7 +25,7 @@ This application was build using [React.js](https://reactjs.org/docs/getting-sta
 
 1. Clone the repo 
    ```sh
-   git clone https://github.com/adwltfh/hw-module-2.git
+   git clone (https://github.com/ajeung/gigih-capstone-project)
    ```
 3. Install npm packages
    ```sh
