@@ -10,12 +10,9 @@
     "firebase": "^9.8.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-<<<<<<< HEAD
     "react-redux": "^8.0.2",
     "react-redux-firebase": "^3.11.0",
-=======
     "react-firebase-hooks": "^5.0.3",
->>>>>>> main
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
@@ -50,20 +47,18 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@redux-devtools/core": "^3.13.1"
+    "@redux-devtools/core": "^3.13.1",
+    "typescript": "^4.7.4"
   },
   "firebase-config": {
     "output": "public/",
     "configs": {
       "development": "config/firebase-dev.json",
       "production": "config/firebase-prod.json"
-    }
-=======
+    },
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "typescript": "^4.7.4"
->>>>>>> main
   }
 }
