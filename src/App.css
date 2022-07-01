@@ -624,18 +624,17 @@ button:hover {
 
 .form__wrapper {
   width: 100%;
-  background-color: #09dbac;
   height: 750px;
-  padding-top: 100px;
 }
 
 .form__wrapper h2 {
   margin-left: 150px;
   margin-bottom: 25px;
+  /* color: black; */
 }
 
 .form__card {
-  height: 80%;
+  height: 70%;
   width: 80%;
   margin: 0 auto;
   background-color: white;
