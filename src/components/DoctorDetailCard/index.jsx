@@ -1,9 +1,10 @@
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 // import { Link } from "react-router-dom";
 // import token from "../header_footer/header"
 // import userAuth from '../../components/header_footer/header'
 import styles from "./style.module.css";
 const DoctorDetailCard = () => {
+  const { pathname } = useLocation();
   // const loginChecker = () => {
   //   if(userAuth){
   //     //this.props.navigation.push("/payment/1");
@@ -12,8 +13,8 @@ const DoctorDetailCard = () => {
   //   else {
   //     alert("u need to login")
   //   }
-// }
-
+  // }
+  const name = decodeURI(pathname.split("/")[pathname.split("/").length - 1]);
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
@@ -31,7 +32,7 @@ const DoctorDetailCard = () => {
 
         <div className={styles.right}>
           <div className={styles.headerContainer}>
-            <h6>Dr. Dimas Afrizal</h6>
+            <h6>{name}</h6>
             <h6>Dokter Umum</h6>
           </div>
           <div className={styles.infoContainer}>
@@ -50,15 +51,16 @@ const DoctorDetailCard = () => {
           </div>
           <div className={styles.actionContainer}>
             <div className={styles.buttonContainer}>
-              
-              
-                <div className={styles.button}>
-                  
-                    <button type="button" onClick={() => navigate("/payment/1")}>Chat</button>
-                  {/* <Link to="/payment/1">
+              <div className={styles.button}>
+                <button
+                  type="button"
+                  onClick={() => navigate(`/payment/${name}`)}
+                >
+                  Chat
+                </button>
+                {/* <Link to="/payment/1">
                   </Link> */}
-                </div>
-              
+              </div>
 
               <div className={styles.button}>
                 <button

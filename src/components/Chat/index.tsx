@@ -8,11 +8,14 @@ import "firebase/compat/analytics";
 // import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useState, useRef } from "react";
+import { useList } from "react-firebase-hooks/database";
+import { ref, getDatabase } from "firebase/database";
+
 import { getAuth } from "@firebase/auth";
 
 import { selectUserName, selectUserEmail } from "../../redux/reducer/reducers";
 import { useSelector } from "react-redux";
-
+import { firebaseApp } from "redux/firebase-config/firebase";
 // firebase.initializeApp({
 //   apiKey: "AIzaSyAyl7zNqJ4MY-hcwel7jYT97rq6S020GhU",
 //   authDomain: "soluhouse2022.firebaseapp.com",
@@ -72,6 +75,8 @@ const ChatFunction = () => {
 const ChatRoom = () => {
   // const userName = useSelector(selectUserName)
   // const userEmail = useSelector(selectUserEmail)
+  const database = getDatabase(firebaseApp);
+  const [snapshots, loading, error] = useList(ref(database, "list"));
 
   const dummy = useRef<any>();
   const messagesRef = firestore.collection("messages");
@@ -106,7 +111,8 @@ const ChatRoom = () => {
       </main>
 
       <form className="formchat" onSubmit={sendMessage}>
-        <input className="formchat-input"
+        <input
+          className="formchat-input"
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
           placeholder="say something nice"
@@ -126,7 +132,8 @@ const ChatMessage = (props) => {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img className="formchat-img"
+      <img
+        className="formchat-img"
         alt=""
         src={
           photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
