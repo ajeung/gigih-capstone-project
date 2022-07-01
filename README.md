@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# [SoluHouse - Giving solutions to your problems](https://github.com/ajeung/gigih-capstone-project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### About Project
+This is a website based mental health app to help maintain your mental health by providing a one on one consultation feature with the best and certified university graduate mentors. In addition to the consultation feature, this application also provides article features for those of you who want to keep updating about the world of health, online pharmacies for those of you who want a practical way when you want to redeem drugs, and health checks to continue to monitor your mental health through our prediction quizzes. However, due to development stage, currently the SoluHouse application only provides a consultation feature.
 
-## Available Scripts
+### Built With/ Tech Stack
+This application was build using [React.js](https://reactjs.org/docs/getting-started.html) as the major framework and some other frameworks, also libraries, such as:
+* [React Router v6](https://reactrouter.com/) as the navigational component,
+* [Tailwind CSS](https://tailwindcss.com/) as the component stylist,
+* [Typescript](https://www.typescriptlang.org/) for defining the variables,
+* [Redux](https://github.com/axios/axios) for fetching the data from API,
+* [Firebase](https://firebase.google.com/) as the API for authorization and cloud storage for the consultation feature.
 
-In the project directory, you can run:
+## Getting Started
+### Prerequisites
 
-### `npm start`
+* NodeJs
+  [Node.js Installer](https://nodejs.org/en/download/)
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repo 
+   ```sh
+   git clone https://github.com/adwltfh/hw-module-2.git
+   ```
+3. Install npm packages
+   ```sh
+   npm install
+   ```
+4. Enter the following command to run your project
+   ```sh
+   npm start
+   ```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+### 
