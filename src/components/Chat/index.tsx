@@ -30,12 +30,11 @@ const ChatFunction = () => {
 
   return (
     <div className="App">
-      <header>
-        <h1>⚛️🔥💬</h1>
-        <SignOut />
-      </header>
-
-      <section>{user ? <ChatRoom /> : <SignIn />}</section>
+        <header>
+          <h1>⚛️🔥💬</h1>
+          <SignOut />
+        </header>
+        <section>{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
   );
 };

@@ -1,6 +1,4 @@
-body {
-    background-color: #282c34;
-}
+
 
 .App {
     text-align: center;
@@ -60,14 +58,13 @@ form {
     bottom: 0;
     background-color: rgb(24, 23, 23);
     width: 100%;
-    max-width: 728px;
     display: flex;
     font-size: 1.5rem;
 }
 
 form button {
     width: 20%;
-    background-color: rgb(56, 56, 143);
+    margin: 0;
 }
 
 
@@ -150,3 +147,4 @@ ul, li {
     border-radius: 50%;
     margin: 2px 5px;
 }
+
