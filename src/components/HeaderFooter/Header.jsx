@@ -84,7 +84,7 @@ const Header = () => {
                 </div>
             </Modal>
 
-            <div className={`is__loggedin ${userName ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
+            <div className={`header-button is__loggedin ${userName ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
                 <button id={styles.loginBtn} onClick={() => handleLogout()}>Logout</button>
             </div>
         </div>

@@ -21,9 +21,10 @@
   flex: 1;
   min-height: 68vh;
   max-height: 68vh;
-  background: grey;
+  background: rgb(195, 191, 191);
   flex-direction: column;
   overflow: scroll;
+  padding: 0 20px;
 }
 
 .content > div {
@@ -33,23 +34,24 @@
 
 .input {
   width: 100%;
-  /* min-width: 100%; */
   display: flex;
   flex: 1;
   margin-right: 8px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 0.5px solid black;
   padding: 4px;
   padding-left: 12px;
-  font-size: 12px;
+  font-size: 16px;
+  height: 50px;
 }
 
 .doctorChat {
   display: flex;
   background: green;
   color: white;
-  padding: 8px;
-  border-radius: 8px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 20px 20px 20px 0px;
 }
 
 .meChat {
@@ -58,8 +60,8 @@
 
 .meChat > div {
   background: blue;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 15px;
+  border-radius: 20px 20px 0px 20px;
 }
 
 .meChat > div > span {
