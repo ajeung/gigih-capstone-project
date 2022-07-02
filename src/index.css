@@ -160,17 +160,18 @@ img {
 /*-----------------------------------------BUTTON */
 button {
   cursor: pointer;
-  border: 1px solid white;
-  color: var(--button-font-color);
-  background-color: var(--button-lgreen-color);
+  border: 1px solid var(--button-lgreen-color);
+  color: var(--light-green);
+  background-color: white;
   font-size: var(--font-smaller-size);
   font-weight: var(--font-weight-thin);
   padding: 2px 15px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+  border-radius: 5px;
+  box-shadow: rgba(206, 206, 206, 0.2) 0 3px 5px -1px,
     rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
 }
 button:hover {
+  border: 1px solid var(--dark-green);
   background-color: var(--dark-green);
   transition: 1s;
 }

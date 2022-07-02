@@ -6,15 +6,10 @@ import { auth, provider } from '../../redux/firebase-config/firebase'
 import { setActiveUser, setUserLogoutState, selectUserName, selectUserEmail } from "../../redux/reducer/reducers";
 
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { useFirebase } from "react-redux-firebase";
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
-
-    const firebase = useFirebase();
-    const navigate = useNavigate();
-
     const dispatch = useDispatch()
     const userName = useSelector(selectUserName)
     const userEmail = useSelector(selectUserEmail)
@@ -49,6 +44,7 @@ const Header = () => {
                     <img id='headerLogo' src={logoHeader} alt="Logo" />
                 </a>
             </div>
+
 
             <a className='header__icon-arrow'
                 onClick={() => {
