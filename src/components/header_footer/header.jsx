@@ -93,8 +93,6 @@ const Header = () => {
                 <div className="profile__options">
                     <span className='profile__icon-arrow'><i className='bx bxs-down-arrow'></i></span>
                     <div className={`profile__icon-dropdown ${showOptionDropdown ? "" : styles.hidden}`}>
-                        <p onClick={() => navigate("/view-profile")}>View Profile</p>
-                        <p onClick={() => navigate("/edit-profile")}>Edit Profile</p>
                         <p onClick={handleLogout}>Logout</p>
                     </div>
                 </div>

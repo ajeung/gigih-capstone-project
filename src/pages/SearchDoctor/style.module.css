@@ -29,12 +29,11 @@
 }
 
 .listOfDoctor{
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px;
     display: grid;
     grid-column-end: 2;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 33.33% 33.33% 33.33% ;
-    grid-gap: 63px;
+    grid-gap: 10px;
 }
 
 .card {

@@ -3,8 +3,12 @@ import img_consultation from '../assets/consultation.jpg';
 import img_pharmacy from '../assets/pharmacy.jpg';
 import img_checkup from '../assets/checkup.jpg';
 
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
+    const navigate = useNavigate()
+
     return (
         <div className='home__container'>
             <section className='menu'>
@@ -14,7 +18,7 @@ const Home = () => {
                         <p>Menjawab Kekhawatiran Anda</p>
                     </div>
                     <div className="menu__container">
-                        <div className='menu__cards'>
+                        <div className='menu__cards' onClick={() => navigate('/search-doctor')}>
                             <img className='menu__icon' src={img_consultation} alt="" />
                             <p>Konsultasi</p>
                         </div>
