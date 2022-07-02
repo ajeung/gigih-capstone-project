@@ -5,6 +5,31 @@ import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
 import 'firebase/compat/analytics'
 
+// import { useAuthState } from "react-firebase-hooks/auth";
+import { useCollectionData } from "react-firebase-hooks/firestore";
+import { useState, useRef } from "react";
+import { useList } from "react-firebase-hooks/database";
+import { ref, getDatabase } from "firebase/database";
+
+import { getAuth } from "@firebase/auth";
+
+import { selectUserName, selectUserEmail } from "../../redux/reducer/reducers";
+import { useSelector } from "react-redux";
+import { firebaseApp } from "redux/firebase-config/firebase";
+// firebase.initializeApp({
+//   apiKey: "AIzaSyAyl7zNqJ4MY-hcwel7jYT97rq6S020GhU",
+//   authDomain: "soluhouse2022.firebaseapp.com",
+//   projectId: "soluhouse2022",
+//   storageBucket: "soluhouse2022.appspot.com",
+//   messagingSenderId: "1022303014861",
+//   appId: "1:1022303014861:web:b8e29c8904af7ddad5be84",
+//   measurementId: "G-HT9EJQTC5B",
+// });
+
+const auth = getAuth(firebase.app());
+// const authApp = firebase.auth();
+const firestore = firebase.firestore();
+// const analytics = firebase.analytics();
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { useState, useRef } from 'react'
 import { getAuth } from '@firebase/auth'
@@ -24,6 +49,10 @@ const ChatFunction = () => {
 }
 
 const ChatRoom = () => {
+  // const userName = useSelector(selectUserName)
+  // const userEmail = useSelector(selectUserEmail)
+  const database = getDatabase(firebaseApp);
+  const [snapshots, loading, error] = useList(ref(database, "list"));
     const dummy = useRef<any>()
     const messagesRef = firestore.collection('messages')
     const query = messagesRef.orderBy('createdAt').limit(25)
@@ -56,14 +85,14 @@ const ChatRoom = () => {
                 <span ref={dummy}></span>
             </main>
 
-            <form className="formchat" onSubmit={sendMessage}>
-                <input
-                    className="formchat-input"
-                    value={formValue}
-                    onChange={(e) => setFormValue(e.target.value)}
-                    placeholder="say something nice"
-                />
-                <button className="formchat-button" type="submit" disabled={!formValue}>
+      <form className="formchat" onSubmit={sendMessage}>
+        <input
+          className="formchat-input"
+          value={formValue}
+          onChange={(e) => setFormValue(e.target.value)}
+          placeholder="say something nice"
+        />
+        <button className="formchat-button" type="submit" disabled={!formValue}>
           🕊️
                 </button>
             </form>
@@ -76,18 +105,18 @@ const ChatMessage = (props) => {
 
     const messageClass = uid === auth?.currentUser?.uid ? 'sent' : 'received'
 
-    return (
-        <div className={`message ${messageClass}`}>
-            <img
-                className="formchat-img"
-                alt=""
-                src={
-                    photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'
-                }
-            />
-            <p id="tagPChat">{text}</p>
-        </div>
-    )
-}
+  return (
+    <div className={`message ${messageClass}`}>
+      <img
+        className="formchat-img"
+        alt=""
+        src={
+          photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
+        }
+      />
+      <p id="tagPChat">{text}</p>
+    </div>
+  );
+};
 
 export default ChatFunction
