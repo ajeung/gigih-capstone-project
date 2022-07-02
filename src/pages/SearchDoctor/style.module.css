@@ -28,17 +28,19 @@
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .categoriesButton{
-    font-size: 10px;
+    font-size: medium;
     margin: 0 10px;
     padding: 10px 10px;
 }
 
 .listOfDoctor{
+    align-items: center;
+    justify-content: center;
     margin: 30px 30px;
     display: grid;
     grid-column-end: 2;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-gap: 10px;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
 }
 
 .card {

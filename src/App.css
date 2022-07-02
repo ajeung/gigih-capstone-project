@@ -168,57 +168,10 @@ img {
   transition: 0.5s;
 }
 
-
 .is__loggedin {
   float: right;
   padding: 4px 0;
   cursor: pointer;
-}
-
-.profile__options {
-  position: relative;
-  display: inline-block;
-}
-
-.profile__icon {
-  display: inline-block;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-color: #6bedd0;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.profile__icon-arrow {
-  float: right;
-  margin: 5px;
-  font-size: var(--font-smaller-size);
-}
-
-.profile__icon-dropdown {
-  position: absolute;
-  background-color: #fff;
-  min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 7px 16px;
-  z-index: 1;
-  top: 40px;
-  left: auto;
-  right: 0;
-}
-
-.profile__icon-dropdown p {
-  font-size: var(--font-smaller-size);
-  padding: 5px 0;
-}
-
-.profile__icon-dropdown p:hover {
-  color: var(--light-green);
 }
 
 /*================ FOOTER ================*/

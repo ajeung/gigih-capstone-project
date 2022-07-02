@@ -2,13 +2,10 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import HomeLayout from "../layouts/HomeLayout";
 import DoctorDetail from "../pages/DoctorDetail";
 import DoctorList from "../pages/DoctorList";
-import Home from "../pages/_Home";
+import Home from "../pages/Home";
 import Payment from "../pages/Payment";
 import SearchDoctor from "../pages/SearchDoctor";
 import PriceDetail from "../pages/PriceDetail";
-import EditProfile from "../pages/EditProfile";
-import DataUser from "../pages/DataUser";
-import ViewProfile from "../pages/ViewProfile";
 import ChatPages from "../pages/ChatPages";
 
 import { selectUserName, selectUserEmail } from "../redux/reducer/reducers";
@@ -29,9 +26,6 @@ const GlobalRoutes = () => {
         <Route path="/search-doctor" element={<SearchDoctor />} />
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="/payment/:id/price-detail" element={<PriceDetail />} />
-        <Route path="/data-user" element={<DataUser />} />
-        <Route path="/view-profile" element={<ViewProfile />} />
-        <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/chat/:id" element={<ChatPages />} />
       </Routes>
     </HomeLayout>

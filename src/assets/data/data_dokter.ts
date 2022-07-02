@@ -14,7 +14,7 @@ const data: DoctorType[] = [
   {
     id: 1,
     name: "Maria Rahmawati",
-    title: "S.Psi..",
+    title: "S.Psi.",
     gender: "F",
     usia: "20+",
     status: "Belum berkeluarga",

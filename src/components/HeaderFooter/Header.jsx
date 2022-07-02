@@ -71,7 +71,7 @@ const Header = () => {
                         <Link to="">Artikel</Link>
                     </li>
                     <li>
-                        <Link to="/search-doctor">Cari Dokter</Link>
+                        <Link to="/search-doctor">Cari Mentor</Link>
                     </li>
                 </ul>
             </div>
@@ -89,13 +89,7 @@ const Header = () => {
             </Modal>
 
             <div className={`is__loggedin ${userName ? "" : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
-                <div className="profile__icon"></div>
-                <div className="profile__options">
-                    <span className='profile__icon-arrow'><i className='bx bxs-down-arrow'></i></span>
-                    <div className={`profile__icon-dropdown ${showOptionDropdown ? "" : styles.hidden}`}>
-                        <p onClick={handleLogout}>Logout</p>
-                    </div>
-                </div>
+                <button id={styles.loginBtn} onClick={() => handleLogout()}>Logout</button>
             </div>
         </div>
     )

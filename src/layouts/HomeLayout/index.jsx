@@ -1,7 +1,6 @@
 import { useLocation } from "react-router";
-import Header from "../../components/header_footer/header";
-import HomeFooter from "../../components/header_footer/footer";
-import SearchBar from "../../components/SearchBar";
+import Header from "../../components/HeaderFooter/Header";
+import HomeFooter from "../../components/HeaderFooter/Footer";
 import styles from "./style.module.css";
 
 const HomeLayout = (props) => {

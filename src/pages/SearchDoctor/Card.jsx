@@ -14,6 +14,8 @@ const Card = ({ item }) => {
                     className={styles.card}
                     key={Val.id}
                     name={Val.name}
+                    title={Val.title}
+                    speciality={Val.speciality}
                     photo={photo}
                 />
             );
