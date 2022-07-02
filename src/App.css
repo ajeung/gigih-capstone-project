@@ -126,19 +126,19 @@ img {
 
 /*================ HEADER n NAV ================*/
 .header {
-  display : flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding : 30px 10px;
+  padding: 30px 10px;
   background-color: var(--header-bg-color);
   height: 52px;
   width: 100%;
   position: fixed;
 }
-.header-link{
+.header-link {
   margin: 0px 0px;
 }
-.header-link li{
+.header-link li {
   width: fit-content;
   display: inline-block;
   align-items: center;
@@ -163,11 +163,10 @@ img {
 .header__icon-arrow:hover {
   color: var(--light-green);
 }
-#loginBtn:hover{
+#loginBtn:hover {
   background-color: #024032;
   transition: 0.5s;
 }
-
 
 .is__loggedin {
   float: right;
@@ -223,19 +222,7 @@ img {
 
 /*================ FOOTER ================*/
 
-
 /*================ BUTTON ================*/
-/* button {
-  cursor: pointer;
-  border:1px solid var(--button-lgreen-color);
-  color: var(--button-lgreen-color);
-  background-color: #fff;
-  font-size: var(--font-smaller-size);
-  font-weight: var(--font-weight-thin);
-  padding: 5px 30px;
-  border-radius: 3px;
-} */
-
 button:hover {
   background-color: var(--dark-green);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -267,7 +254,7 @@ button:hover {
 }
 
 .menu__intro p {
-  font-size: var(--font-small-size)
+  font-size: var(--font-small-size);
 }
 
 .menu__container {
@@ -295,7 +282,9 @@ button:hover {
 
 .menu__cards:hover {
   transform: scale(1.01, 1.01);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.07), 0 8px 32px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05),
+    0 2px 2px rgba(0, 0, 0, 0.07), 0 8px 32px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07);
 }
 
 .menu__icon {
@@ -306,10 +295,8 @@ button:hover {
 
 .feeds {
   background: linear-gradient(180deg, var(--lite-grey), var(--light-green));
-  ;
   padding: 7vh 0 5vh 0;
 }
-
 
 .feeds__wrapper h3 {
   margin-top: 10px;
@@ -347,9 +334,11 @@ button:hover {
   top: 0;
   left: 0;
   opacity: 0;
-  background: linear-gradient(-35deg,
-      var(--light-blue) 0%,
-      rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(
+    -35deg,
+    var(--light-blue) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
   transition: all 0.5s linear;
 }
 
@@ -424,7 +413,7 @@ button:hover {
 
   .header-link li a {
     width: 100%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .header-link li:hover {
@@ -435,17 +424,17 @@ button:hover {
   .header-link.expanded ul {
     display: block;
   }
-  .header-button{
-    margin:0 30px;
+  .header-button {
+    margin: 0 30px;
   }
-  .is__loggedin{
+  .is__loggedin {
     margin: 0 50px;
   }
 }
 
 /* Small Devices & Medium Devices */
 @media screen and (max-width: 320px) {
-  .slick-slide>div {
+  .slick-slide > div {
     margin: 0 15px;
   }
 
@@ -565,7 +554,7 @@ button:hover {
 }
 
 @media screen and (min-width: 576px) {
-  .slick-slide>div {
+  .slick-slide > div {
     margin: 0 15px;
   }
 
@@ -594,7 +583,7 @@ button:hover {
 
 /* Large Devices */
 @media screen and (min-width: 992px) {
-  .slick-slide>div {
+  .slick-slide > div {
     margin: 0 26px;
   }
 
@@ -602,14 +591,13 @@ button:hover {
     width: 250px;
   }
 
-
   .feeds__content {
     height: 250px;
   }
 }
 
 @media screen and (min-width: 1337px) {
-  .slick-slide>div {
+  .slick-slide > div {
     margin: 0 26px;
   }
 
@@ -630,7 +618,6 @@ button:hover {
 .form__wrapper h2 {
   margin-left: 150px;
   margin-bottom: 25px;
-  /* color: black; */
 }
 
 .form__card {

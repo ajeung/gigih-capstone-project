@@ -1,9 +1,9 @@
-import "../Chat/style.module.css";
+import '../Chat/style.module.css'
 
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
-import "firebase/compat/analytics";
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
+import 'firebase/compat/auth'
+import 'firebase/compat/analytics'
 
 // import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -30,85 +30,60 @@ const auth = getAuth(firebase.app());
 // const authApp = firebase.auth();
 const firestore = firebase.firestore();
 // const analytics = firebase.analytics();
+import { useCollectionData } from 'react-firebase-hooks/firestore'
+import { useState, useRef } from 'react'
+import { getAuth } from '@firebase/auth'
+
+const auth = getAuth(firebase.app())
+const firestore = firebase.firestore()
 
 const ChatFunction = () => {
-  // const [user] = useAuthState(auth);
-
-  return (
-    <div className="chat">
-      <header>
-        <h1>⚛️🔥💬</h1>
-        {/* <SignOut /> */}
-      </header>
-      <ChatRoom />
-
-      {/* <section>{userName ? <ChatRoom /> : <SignIn />}</section> */}
-    </div>
-  );
-};
-
-// const SignIn = () => {
-//   const signInWithGoogle = () => {
-//     const provider = new firebase.auth.GoogleAuthProvider();
-//     authApp.signInWithPopup(provider);
-//   };
-
-//   return (
-//     <>
-//       <button className="sign-in" onClick={signInWithGoogle}>
-//         Sign in with Google
-//       </button>
-//     </>
-//   );
-// };
-
-// const SignOut = () => {
-//   return (
-//     auth.currentUser && (
-//       <button className="sign-out" onClick={() => auth.signOut()}>
-//         Sign Out
-//       </button>
-//     )
-//   );
-// };
+    return (
+        <div className="chat">
+            <header>
+                <h1>⚛️🔥💬</h1>
+            </header>
+            <ChatRoom />
+        </div>
+    )
+}
 
 const ChatRoom = () => {
   // const userName = useSelector(selectUserName)
   // const userEmail = useSelector(selectUserEmail)
   const database = getDatabase(firebaseApp);
   const [snapshots, loading, error] = useList(ref(database, "list"));
+    const dummy = useRef<any>()
+    const messagesRef = firestore.collection('messages')
+    const query = messagesRef.orderBy('createdAt').limit(25)
 
-  const dummy = useRef<any>();
-  const messagesRef = firestore.collection("messages");
-  const query = messagesRef.orderBy("createdAt").limit(25);
+    const [messages] = useCollectionData(query as any, { idField: 'id' } as any)
+    const [formValue, setFormValue] = useState('')
 
-  const [messages] = useCollectionData(query as any, { idField: "id" } as any);
-  const [formValue, setFormValue] = useState("");
+    const sendMessage = async (e) => {
+        e.preventDefault()
+        if (auth.currentUser) {
+            const { uid, photoURL } = auth.currentUser
 
-  const sendMessage = async (e) => {
-    e.preventDefault();
-    if (auth.currentUser) {
-      const { uid, photoURL } = auth.currentUser;
+            await messagesRef.add({
+                text: formValue,
+                createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+                uid,
+                photoURL,
+            })
 
-      await messagesRef.add({
-        text: formValue,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-        uid,
-        photoURL,
-      });
-
-      setFormValue("");
-      dummy?.current?.scrollIntoView({ behavior: "smooth" });
+            setFormValue('')
+            dummy?.current?.scrollIntoView({ behavior: 'smooth' })
+        }
     }
-  };
 
-  return (
-    <>
-      <main className="mainchat">
-        {messages &&
+    return (
+        <>
+            <main className="mainchat">
+                {messages &&
           messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
-        <span ref={dummy}></span>
-      </main>
+                <span ref={dummy}></span>
+            </main>
 
       <form className="formchat" onSubmit={sendMessage}>
         <input
@@ -119,16 +94,16 @@ const ChatRoom = () => {
         />
         <button className="formchat-button" type="submit" disabled={!formValue}>
           🕊️
-        </button>
-      </form>
-    </>
-  );
-};
+                </button>
+            </form>
+        </>
+    )
+}
 
 const ChatMessage = (props) => {
-  const { text, uid, photoURL } = props.message;
+    const { text, uid, photoURL } = props.message
 
-  const messageClass = uid === auth?.currentUser?.uid ? "sent" : "received";
+    const messageClass = uid === auth?.currentUser?.uid ? 'sent' : 'received'
 
   return (
     <div className={`message ${messageClass}`}>
@@ -144,4 +119,4 @@ const ChatMessage = (props) => {
   );
 };
 
-export default ChatFunction;
+export default ChatFunction

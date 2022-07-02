@@ -1,24 +1,23 @@
-import "./App.css";
-
-import { Provider } from 'react-redux';
-
-import GlobalRoutes from "./router";
-import store from "./redux/store/store";
+import './App.css'
+import { Provider } from 'react-redux'
+import GlobalRoutes from './router'
+import store from './redux/store/store'
+import React from 'react'
 
 const App = () => {
-  return (
-    <div className="app_container">
-      <GlobalRoutes />
-    </div>
-  );
-};
-
-const AppContainer = () => {
-  return (
-    <Provider store={store}>
-      <App />
-    </Provider>
-  )
+    return (
+        <div className="app_container">
+            <GlobalRoutes />
+        </div>
+    )
 }
 
-export default AppContainer;
+const AppContainer = () => {
+    return (
+        <Provider store={store}>
+            <App />
+        </Provider>
+    )
+}
+
+export default AppContainer

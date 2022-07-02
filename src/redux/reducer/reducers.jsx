@@ -13,16 +13,16 @@ const userSlice = createSlice({
             state.userName = action.payload.userName
             state.userEmail = action.payload.userEmail
         },
-        setUserLogoutState: state => {
+        setUserLogoutState: (state) => {
             state.userName = null
             state.userEmail = null
-        }
-    }
+        },
+    },
 })
 
-export const {setActiveUser, setUserLogoutState} = userSlice.actions
+export const { setActiveUser, setUserLogoutState } = userSlice.actions
 
-export const selectUserName = state => state.user.userName
-export const selectUserEmail = state => state.user.userEmail
+export const selectUserName = (state) => state.user.userName
+export const selectUserEmail = (state) => state.user.userEmail
 
 export default userSlice.reducer

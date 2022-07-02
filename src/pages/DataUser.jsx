@@ -6,7 +6,11 @@ const DataUser = () => {
         <div className="wrapper">
             <div className="card">
                 <div>
-                    <img className="profile_image" src='https://cdn-image.hipwee.com/wp-content/uploads/2018/10/hipwee-photo-1497704009475-24f74754c24e-640x427.jpg'></img>
+                    <img
+                        className="profile_image"
+                        src="https://cdn-image.hipwee.com/wp-content/uploads/2018/10/hipwee-photo-1497704009475-24f74754c24e-640x427.jpg"
+                        alt=""
+                    ></img>
                 </div>
                 <div className="data_user">
                     <ul>
@@ -27,12 +31,10 @@ const DataUser = () => {
                         <button>Edit</button>
                         <button>Keluar</button>
                     </div>
-                    
                 </div>
             </div>
         </div>
     )
 }
-        
 
 export default DataUser

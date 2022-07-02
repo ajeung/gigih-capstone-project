@@ -1,10 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import photo from "../../assets/img/man.png"
-import styles from "./style.module.css";
+import { useNavigate } from 'react-router-dom'
+import photo from '../../assets/img/man.png'
+import styles from './style.module.css'
 
 const ViewProfile = () => {
-
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     return (
         <div className={styles.container}>
@@ -15,8 +14,20 @@ const ViewProfile = () => {
                 <div className={styles.detail_item_top}>
                     <p>Dimas Afrizal</p>
                     <div>
-                        <button type="button" className={styles.btn} onClick={() => navigate("/edit-profile")}>Edit</button>
-                        <button type="button" className={styles.btn} onClick={() => navigate("/")}>Keluar</button>
+                        <button
+                            type="button"
+                            className={styles.btn}
+                            onClick={() => navigate('/edit-profile')}
+                        >
+              Edit
+                        </button>
+                        <button
+                            type="button"
+                            className={styles.btn}
+                            onClick={() => navigate('/')}
+                        >
+              Keluar
+                        </button>
                     </div>
                 </div>
                 <div className={styles.detail_item_number}>
@@ -36,7 +47,7 @@ const ViewProfile = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ViewProfile;
+export default ViewProfile

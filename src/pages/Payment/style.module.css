@@ -1,7 +1,6 @@
 .root {
   width: 100%;
   height: 100%;
-  /* display: none; */
 }
 
 .container {
@@ -52,7 +51,7 @@
   width: 100%;
 }
 
-.gopayWrapper>img {
+.gopayWrapper > img {
   width: 40px;
   height: 40px;
 }
@@ -71,7 +70,7 @@
   margin: auto;
 }
 
-.button>button {
+.button > button {
   border: none;
   padding: 0.5em 3em;
   font-size: 20px;

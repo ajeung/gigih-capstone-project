@@ -1,12 +1,11 @@
-import styles from "./style.module.css";
-import { useNavigate } from "react-router-dom";
+import styles from './style.module.css'
+import { useNavigate } from 'react-router-dom'
 
 const DoctorCategory = ({ title }) => {
-
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const handleClick = (id) => {
-        navigate(`/list-doctor/${id}`);
+        navigate(`/list-doctor/${id}`)
     }
 
     return (
@@ -16,7 +15,7 @@ const DoctorCategory = ({ title }) => {
             </div>
             <h4>{title}</h4>
         </div>
-    );
-};
+    )
+}
 
-export default DoctorCategory;
+export default DoctorCategory
