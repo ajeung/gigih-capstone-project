@@ -6,8 +6,10 @@ This is a website based mental health app to help maintain your mental health by
 ### Built With/ Tech Stack
 This application was build using [React.js](https://reactjs.org/docs/getting-started.html) as the major framework and some other frameworks, also libraries, such as:
 * [React Router v6](https://reactrouter.com/) as the navigational component,
-* [Tailwind CSS](https://tailwindcss.com/) as the component stylist,
+* [React Slick](http://react-slick.neostack.com/) as the component stylist,
+* [Sweet Alert 2](https://sweetalert2.github.io/) as the component stylist,
 * [Typescript](https://www.typescriptlang.org/) for defining the variables,
+* [Eslint](https://eslint.org/) for  identifying and reporting code consistency,
 * [Redux](https://github.com/axios/axios) for fetching the data from API,
 * [Firebase](https://firebase.google.com/) as the API for authorization and cloud storage for the consultation feature.
 
@@ -37,7 +39,28 @@ This application was build using [React.js](https://reactjs.org/docs/getting-sta
    ```
 
 ## Features
-### 
+### Login Page
+To access the main feature, please log in with your google account. Use the log in button on the upper right side of the screen.
+![WhatsApp Image 2022-07-02 at 7 23 37 PM](https://user-images.githubusercontent.com/86681678/177004780-05ccc246-f72a-4188-8f58-854e49d4cfd7.jpeg)
+
+### Text Consultation (Featured)
+To make a consultation, first, you should choose the mentor that related to your problem. You can do that by clicking the categories button and it will automatically sort the mentor by their speciality.
+![WhatsApp Image 2022-07-02 at 7 15 25 PM](https://user-images.githubusercontent.com/86681678/177004799-0497f810-33e2-4cf1-9db4-e53501e77b25.jpeg)
+
+Choose the mentor that you would like to consult, then click the chat button. It will direct you to the page that show the details of the mentor. Click chat again to continue, or click back to get to the previous page.
+
+After that, you will be directed to the payment page.
+
+If the payment is confirmed, you will be directed to the chat page. Now, you can privately consult your problems with one of our best mentor!
+
+### Health Article Section
+This page is still under construction. However, you still can see the preview on the bottom landing page.
+
+### E-Pharmacy
+This page is still under construction.
+
+### Medical Checkup
+This page is still under construction.
 
 ## Authors and Acknowledgment
 * UI/ UX
