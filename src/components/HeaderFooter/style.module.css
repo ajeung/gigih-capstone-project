@@ -3,13 +3,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0.5rem auto;
     padding: 2rem;
 }
 
 .content>h4 {
     font-weight: 200;
-    font-size: 32px;
-    margin: 0.5rem 4rem;
+    font-size: large;
+    margin: 30px auto;
     padding: 1rem;
 }
 
@@ -22,72 +23,8 @@
     color: #0e8e72;
 }
 
-.handphone_input {
-    display: flex;
-}
-
-.handphone_input .icon {
-    position: relative;
-    right: 27px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.icon>img {
-    width: 100%;
-}
-
-.handphone_input {
-    width: 92%;
-    margin-top: 1.75rem;
-}
-
-.handphone_input>p {
-    background-color: #0e8e72;
-    color: white;
-    padding: 0 1rem;
-    font-weight: bold;
-    margin-right: 0.35rem;
-    font-size: 22px;
-}
-
-.handphone_input>input {
-    border: none;
-    border-bottom: 3px solid #0e8e72;
-    width: 100%;
-    outline: none;
-    font-size: 22px;
-}
-
-.verification_input {
-    width: 75%;
-}
-
-.verification_input>input {
-    border: none;
-    border-bottom: 3px solid #0e8e72;
-    width: 100%;
-    outline: none;
-    font-size: 22px;
-    text-align: center;
-}
-
-.wrong_number {
-    font-size: 16px;
-    margin-top: 1rem;
-}
-
-.verification {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.verification .icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5rem;
+.signin {
+    height: 50px;
 }
 
 .hidden {

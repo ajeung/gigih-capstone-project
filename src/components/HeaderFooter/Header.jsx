@@ -79,7 +79,7 @@ const Header = () => {
                 <div className={styles.content}>
                     <h4>Login ke dalam SoluHouse</h4>
                     <div onClick={() => { setShowHanphoneModal(false); handleLogin() }}>
-                        <button className="sign-in">Login with Google</button>
+                        <button className={styles.signin}>Login with Google</button>
                     </div>      
                 </div>
             </Modal>

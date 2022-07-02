@@ -27,13 +27,13 @@
     overflow-x: hidden;
     position: relative;
     display: block;
-    width: 37vw;
+    width: 20vw;
     min-height: 300px;
     min-width: 300px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 50px;
+    border-radius: 30px;
     padding-bottom: 20px;
     background-color: #fff;
     align-self: center;
