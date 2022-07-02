@@ -63,11 +63,11 @@ This page is still under construction.
 This page is still under construction.
 
 ## Authors and Acknowledgment
-* UI/ UX
+* UI/ UX:
     Dimas Afrizal [KM_G2FE1241]
-* Project Manager
+* Project Manager:
     Adawiyyah Latifah [KM_G2FE2188]
-* Frontend Team
-    Ajeung Angsaweni [KM_G2FE2170]
-    Muhhabbir Cawash [KM_G2FE4286]
+* Frontend Team:
+    Ajeung Angsaweni [KM_G2FE2170],
+    Muhhabbir Cawash [KM_G2FE4286],
     Rizki Putra Aulia [KM_G2FE6246]
