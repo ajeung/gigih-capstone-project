@@ -10,7 +10,7 @@ const DoctorCard = ({ name, rating, price, photo }) => {
   };
 
   return (
-    <div className={styles.container} onClick={() => handleClick(name)}>
+    <div className={styles.containerDoctorCard} onClick={() => handleClick(name)}>
       <div className={styles.doctor_photo}>
         <img src={photo} alt={`Doctor ${name}`} />
       </div>

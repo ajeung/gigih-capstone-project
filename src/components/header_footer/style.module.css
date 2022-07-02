@@ -89,6 +89,9 @@
     height: 30px;
     margin-right: 0.5rem;
 }
+#loginBtn{
+    margin-right: 20px;
+}
 
 .hidden {
     display: none;

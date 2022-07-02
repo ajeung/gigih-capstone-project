@@ -76,7 +76,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className={`header-button ${userName ? styles.hidden : ""}`}>
-                <button id='loginBtn' onClick={() => setShowHanphoneModal(true)}>Login</button>
+                <button id={styles.loginBtn} onClick={() => setShowHanphoneModal(true)}>Login</button>
             </div>
 
             <Modal show={showHanphoneModal} onClose={() => setShowHanphoneModal(false)}>

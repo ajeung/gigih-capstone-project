@@ -27,6 +27,11 @@
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
+.categoriesButton{
+    font-size: 10px;
+    margin: 0 10px;
+    padding: 10px 10px;
+}
 
 .listOfDoctor{
     margin: 30px 30px;

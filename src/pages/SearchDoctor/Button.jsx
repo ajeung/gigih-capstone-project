@@ -7,7 +7,7 @@ const Buttons = ({ filterItem, setItem, menuItems }) => {
         <div className={styles.kategoriDoctor}>
           {menuItems.map((doctor, id) => {
             return (
-              <button
+              <button className={styles.categoriesButton}
                 onClick={() => filterItem(doctor)}
                 key={id}
               >

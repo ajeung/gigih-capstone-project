@@ -225,16 +225,6 @@ img {
 
 
 /*================ BUTTON ================*/
-/* button {
-  cursor: pointer;
-  border:1px solid var(--button-lgreen-color);
-  color: var(--button-lgreen-color);
-  background-color: #fff;
-  font-size: var(--font-smaller-size);
-  font-weight: var(--font-weight-thin);
-  padding: 5px 30px;
-  border-radius: 3px;
-} */
 
 button:hover {
   background-color: var(--dark-green);
@@ -447,6 +437,15 @@ button:hover {
 @media screen and (max-width: 320px) {
   .slick-slide>div {
     margin: 0 15px;
+  }
+
+  .containerDoctorCard {
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 2rem 1.4rem;
+    padding-right: 2rem;
+    align-items: center;
+    cursor: pointer;
   }
 
   .slick-slide {
