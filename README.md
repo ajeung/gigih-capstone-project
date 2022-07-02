@@ -48,10 +48,14 @@ To make a consultation, first, you should choose the mentor that related to your
 ![WhatsApp Image 2022-07-02 at 7 15 25 PM](https://user-images.githubusercontent.com/86681678/177004799-0497f810-33e2-4cf1-9db4-e53501e77b25.jpeg)
 
 Choose the mentor that you would like to consult, then click the chat button. It will direct you to the page that show the details of the mentor. Click chat again to continue, or click back to get to the previous page.
+![WhatsApp Image 2022-07-02 at 9 51 34 PM](https://user-images.githubusercontent.com/86681678/177005954-e6d16df9-8b73-466a-8bb3-29f0d8be44b9.jpeg)
 
 After that, you will be directed to the payment page.
+![WhatsApp Image 2022-07-02 at 9 51 39 PM](https://user-images.githubusercontent.com/86681678/177005947-1341ad51-2b20-415f-8997-95287b39927d.jpeg)
+![WhatsApp Image 2022-07-02 at 9 51 54 PM](https://user-images.githubusercontent.com/86681678/177005952-070c4514-48ad-4a3c-a0d2-e51d3ff1c9dc.jpeg)
 
 If the payment is confirmed, you will be directed to the chat page. Now, you can privately consult your problems with one of our best mentor!
+![WhatsApp Image 2022-07-02 at 9 52 03 PM](https://user-images.githubusercontent.com/86681678/177005939-e8c0c619-6a51-44f7-8f02-722012aaedfb.jpeg)
 
 ### Health Article Section
 This page is still under construction. However, you still can see the preview on the bottom landing page.
