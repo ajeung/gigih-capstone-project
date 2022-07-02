@@ -1,21 +1,10 @@
 import { useLocation, useNavigate } from "react-router";
-// import { Link } from "react-router-dom";
-// import token from "../header_footer/header"
-// import userAuth from '../../components/header_footer/header'
 import styles from "./style.module.css";
 import doctorData from "../../assets/data/data_dokter";
 import * as React from "react";
 const DoctorDetailCard = () => {
   const { pathname } = useLocation();
-  // const loginChecker = () => {
-  //   if(userAuth){
-  //     //this.props.navigation.push("/payment/1");
-  //     navigate("/payment/1");
-  //   }
-  //   else {
-  //     alert("u need to login")
-  //   }
-  // }
+  
   const name = decodeURI(pathname.split("/")[pathname.split("/").length - 1]);
   const navigate = useNavigate();
 

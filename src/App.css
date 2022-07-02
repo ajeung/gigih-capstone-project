@@ -387,10 +387,6 @@ button:hover {
   .header-link.expanded ul {
     display: block;
   }
-
-  .is__loggedin{
-    margin: 0 30px;
-  }
 }
 
 /* Small Devices & Medium Devices */
