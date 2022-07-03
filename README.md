@@ -1,4 +1,4 @@
-# [SoluHouse - Giving solutions to your problems](https://github.com/ajeung/gigih-capstone-project)
+# [SoluHouse - Giving solutions to your problems](https://soluhouse.vercel.app/)
 
 ### About Project
 This is a website based mental health app to help maintain your mental health by providing a one on one consultation feature with the best and certified university graduate mentors. In addition to the consultation feature, this application also provides article features for those of you who want to keep updating about the world of health, online pharmacies for those of you who want a practical way when you want to redeem drugs, and health checks to continue to monitor your mental health through our prediction quizzes. However, due to development stage, currently the SoluHouse application only provides a consultation feature.
