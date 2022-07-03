@@ -1,42 +1,42 @@
 .container {
-  display: flex;
-  margin-right: 2rem;
+    display: flex;
+    margin-right: 2rem;
 }
 
 .categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: white;
-  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.75);
-  width: 65%;
-  margin: 2rem;
-  margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.75);
+    width: 65%;
+    margin: 2rem;
+    margin-top: 0;
 }
 
 .categories > h3 {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  font-weight: 100;
-  font-size: 38px;
-  margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 38px;
+    margin-top: 2rem;
 }
 
-.kategoriDoctor{
+.kategoriDoctor {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
 }
-.categoriesButton{
+.categoriesButton {
     font-size: medium;
     margin: 0 10px;
     padding: 10px 10px;
 }
 
-.listOfDoctor{
+.listOfDoctor {
     align-items: center;
     justify-content: center;
     margin: 30px 30px;
@@ -52,20 +52,19 @@
 }
 
 @media screen and (max-width: 320px) {
-    .kategoriDoctor{
-        
+    .kategoriDoctor {
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
-    .categoriesButton{
+    .categoriesButton {
         width: 80%;
         font-size: small;
         margin: 0 10px;
         padding: 5px 3px;
     }
 
-    .listOfDoctor{
+    .listOfDoctor {
         align-items: center;
         justify-content: center;
         margin: 30px 30px;
@@ -76,18 +75,18 @@
 }
 
 @media screen and (min-width: 576px) {
-    .kategoriDoctor{
+    .kategoriDoctor {
         grid-template-columns: 30% 30% 30%;
         grid-gap: 10px;
     }
-    .categoriesButton{
+    .categoriesButton {
         font-size: small;
         margin: 0 10px;
         padding: 5px 3px;
         height: 50px;
     }
 
-    .listOfDoctor{
+    .listOfDoctor {
         align-items: center;
         justify-content: center;
         margin: 30px 30px;
@@ -98,17 +97,17 @@
 }
 
 @media screen and (min-width: 992px) {
-    .kategoriDoctor{
+    .kategoriDoctor {
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-gap: 5px;
     }
-    .categoriesButton{
+    .categoriesButton {
         font-size: medium;
         padding: 10px 10px;
         height: 70px;
     }
-    
-    .listOfDoctor{
+
+    .listOfDoctor {
         grid-column-end: 2;
         grid-template-columns: 30% 30% 30%;
     }

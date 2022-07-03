@@ -7,7 +7,7 @@ const HintCard = ({ label, img, title, url = '/' }) => {
             <h6
                 style={{
                     marginBottom: 8,
-                    letterSpacing: '0.5px',
+                    letterSpacing: '0.5px'
                 }}
             >
                 {title}

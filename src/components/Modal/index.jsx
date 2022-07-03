@@ -1,12 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './style.module.css'
-import PropTypes from 'prop-types'
-
-VerificationModal.propTypes = {
-    children: PropTypes.any,
-    show: PropTypes.any,
-    onClose: PropTypes.func
-}
 
 const VerificationModal = ({ children, show, onClose }) => {
     const modalRef = useRef(null)

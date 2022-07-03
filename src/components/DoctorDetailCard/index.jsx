@@ -5,7 +5,7 @@ import * as React from 'react'
 
 const DoctorDetailCard = () => {
     const { pathname } = useLocation()
-    
+
     const name = decodeURI(pathname.split('/')[pathname.split('/').length - 1])
     const navigate = useNavigate()
 
@@ -62,13 +62,11 @@ const DoctorDetailCard = () => {
             <div className={styles.content}>
                 <div className={styles.left}>
                     <div className={styles.profilePicture}>
-                        <img src='/woman.png' alt='' />
+                        <img src="/woman.png" alt="" />
                     </div>
                     <div className={styles.starContainer}>
                         {[...Array(5).fill({})].map((item, id) => (
-                            <img src='/star.png' alt='' 
-                                key={id}
-                            />
+                            <img src="/star.png" alt="" key={id} />
                         ))}
                     </div>
                 </div>
@@ -101,10 +99,7 @@ const DoctorDetailCard = () => {
                     <div className={styles.actionContainer}>
                         <div className={styles.buttonContainer}>
                             <div className={styles.button}>
-                                <button
-                                    type='button'
-                                    onClick={() => navigate(`/payment/${name}`)}
-                                >
+                                <button type="button" onClick={() => navigate(`/payment/${name}`)}>
                                     Chat
                                 </button>
                             </div>

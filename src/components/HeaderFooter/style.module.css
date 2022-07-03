@@ -7,14 +7,14 @@
     padding: 2rem;
 }
 
-.content>h4 {
+.content > h4 {
     font-weight: 200;
     font-size: large;
     margin: 30px auto;
     padding: 1rem;
 }
 
-.content>p {
+.content > p {
     padding-bottom: 2rem;
 }
 

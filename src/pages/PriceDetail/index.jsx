@@ -18,13 +18,13 @@ const PriceDetail = () => {
             showCancelButton: true,
             confirmButtonColor: '#09dbac',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Konfirmasi',
+            confirmButtonText: 'Konfirmasi'
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({
                     title: 'Pembayaran Dikonfirmasi!',
                     confirmButtonColor: '#09dbac',
-                    icon: 'success',
+                    icon: 'success'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         navigate(`/chat/${name}`)
@@ -47,7 +47,7 @@ const PriceDetail = () => {
             <div className={styles.content}>
                 <div className={styles.doctor_card}>
                     <div className={styles.doctor_photo}>
-                        <img src={photo} alt='Doctor' />
+                        <img src={photo} alt="Doctor" />
                     </div>
                     <div className={styles.doctor_detail}>
                         <h4>{name}</h4>
@@ -60,7 +60,7 @@ const PriceDetail = () => {
                 </div>
             </div>
             <div className={styles.comfirm_container}>
-                <button type='button' onClick={() => handleComfirm(1)}>
+                <button type="button" onClick={() => handleComfirm(1)}>
                     Konfirmasi
                 </button>
             </div>

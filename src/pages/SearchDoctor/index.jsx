@@ -17,11 +17,7 @@ const SearchDoctor = () => {
 
     return (
         <>
-            <Buttons
-                filterItem={filterItem}
-                setItem={setItem}
-                menuItems={menuItems}
-            />
+            <Buttons filterItem={filterItem} setItem={setItem} menuItems={menuItems} />
             <Card item={item} />
         </>
     )

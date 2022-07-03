@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     userName: null,
-    userEmail: null,
+    userEmail: null
 }
 
 const userSlice = createSlice({
@@ -16,8 +16,8 @@ const userSlice = createSlice({
         setUserLogoutState: (state) => {
             state.userName = null
             state.userEmail = null
-        },
-    },
+        }
+    }
 })
 
 export const { setActiveUser, setUserLogoutState } = userSlice.actions

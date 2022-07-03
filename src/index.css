@@ -1,46 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-  /* ==========================================COLORS*/
-  --lite-grey: #e7e6e9;
-  --dark-grey: #333;
-  --light-blue: #6bedd0;
-  --light-green: #09dbac;
-  --dark-green: #024032;
-  /* -----------------------------------------------*/
-  --header-bg-color: White;
-  --header-txt-color: --dark-grey;
+    /* ==========================================COLORS*/
+    --lite-grey: #e7e6e9;
+    --dark-grey: #333;
+    --light-blue: #6bedd0;
+    --light-green: #09dbac;
+    --dark-green: #024032;
+    /* -----------------------------------------------*/
+    --header-bg-color: White;
+    --header-txt-color: --dark-grey;
 
-  --main-bg-color: var(--lite-grey);
-  --main-font-color: var(--dark-grey);
+    --main-bg-color: var(--lite-grey);
+    --main-font-color: var(--dark-grey);
 
-  --button-lgreen-color: var(--light-green);
-  --button-font-color: white;
-  --button2-white-color: white;
-  --button2-font-color: var(--dark-green);
+    --button-lgreen-color: var(--light-green);
+    --button-font-color: white;
+    --button2-white-color: white;
+    --button2-font-color: var(--dark-green);
 
-  --box-bg-color: white;
-  --box-font-color: var(--dark-grey);
-  --box-second-color: var(--dark-grey);
+    --box-bg-color: white;
+    --box-font-color: var(--dark-grey);
+    --box-second-color: var(--dark-grey);
 
-  --footer-bg-color: var(--dark-green);
-  --footer-txt-color: white;
+    --footer-bg-color: var(--dark-green);
+    --footer-txt-color: white;
 
-  /* ===========================================FONT */
-  --main-font-type: "Poppins", sans-serif;
-  /* ---------------------------------SIZE */
-  --font-large-size: 70px;
-  --font-big-size: 40px;
-  --font-normal-size: 30px;
-  --font-small-size: 20px;
-  --font-smaller-size: 15px;
-  --h1-font-size: 40px;
-  --h2-font-size: 40px;
-  --h3-font-size: 30px;
-  /* -------------------------------WEIGHT */
-  --font-weight-thin: 100;
-  --font-weight-medium: 100;
-  --font-weight-semibold: 600;
+    /* ===========================================FONT */
+    --main-font-type: 'Poppins', sans-serif;
+    /* ---------------------------------SIZE */
+    --font-large-size: 70px;
+    --font-big-size: 40px;
+    --font-normal-size: 30px;
+    --font-small-size: 20px;
+    --font-smaller-size: 15px;
+    --h1-font-size: 40px;
+    --h2-font-size: 40px;
+    --h3-font-size: 30px;
+    /* -------------------------------WEIGHT */
+    --font-weight-thin: 100;
+    --font-weight-medium: 100;
+    --font-weight-semibold: 600;
 }
 
 /* ===========================================BASE */
@@ -104,91 +104,91 @@ img {
 } */
 /*-----------------------------------HEADER n NAV */
 .header {
-  background-color: var(--header-bg-color);
-  color: var(--header-txt-color);
-  height: 50px;
-  width: 100%;
-  position: fixed;
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+    height: 50px;
+    width: 100%;
+    position: fixed;
 }
 #headerLogo {
-  width: 124px;
+    width: 124px;
 }
 
 #headerLogo img {
-  height: auto;
-  border-radius: 100%;
+    height: auto;
+    border-radius: 100%;
 }
 
 .header-link {
-  margin-left: 200px;
+    margin-left: 200px;
 }
 
 .header-link a {
-  color: var(--main-font-color);
-  line-height: 50px;
-  padding: 10px 15px;
-  margin: 10px 10px;
-  font-size: var(--font-smaller-size);
-  font-weight: var(--font-weight-thin);
+    color: var(--main-font-color);
+    line-height: 50px;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    font-size: var(--font-smaller-size);
+    font-weight: var(--font-weight-thin);
 }
 
 .header-link a:hover {
-  background-color: var(--button-lgreen-color);
-  color: var(--button-font-color);
+    background-color: var(--button-lgreen-color);
+    color: var(--button-font-color);
 
-  border-radius: 24px;
+    border-radius: 24px;
 }
 
 /*-----------------------------------------FOOTER */
 .footer {
-  background-color: var(--footer-bg-color);
-  color: var(--footer-txt-color);
-  height: 50px;
-  width: 100%;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-txt-color);
+    height: 50px;
+    width: 100%;
 }
 
 .footer-logo {
-  float: right;
+    float: right;
 
-  padding: 10px 20px 0 20px;
+    padding: 10px 20px 0 20px;
 }
 
 #footerLogo {
-  width: 124px;
+    width: 124px;
 }
 
 .footer-link a {
-  color: white;
-  line-height: 50px;
-  padding: 10px 15px;
-  margin: 10px 10px;
-  font-size: var(--font-smaller-size);
-  font-weight: var(--font-weight-thin);
+    color: white;
+    line-height: 50px;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    font-size: var(--font-smaller-size);
+    font-weight: var(--font-weight-thin);
 }
 
 .footer-link a:hover {
-  background-color: white;
-  color: var(--button-font-color);
-  border-radius: 15px;
-  color: var(--dark-green);
+    background-color: white;
+    color: var(--button-font-color);
+    border-radius: 15px;
+    color: var(--dark-green);
 }
 
 /*-----------------------------------------BUTTON */
 button {
-  cursor: pointer;
-  border: 1px solid var(--button-lgreen-color);
-  color: var(--light-green);
-  background-color: white;
-  font-size: var(--font-smaller-size);
-  font-weight: var(--font-weight-thin);
-  padding: 2px 15px;
-  border-radius: 5px;
-  box-shadow: rgba(206, 206, 206, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    cursor: pointer;
+    border: 1px solid var(--button-lgreen-color);
+    color: var(--light-green);
+    background-color: white;
+    font-size: var(--font-smaller-size);
+    font-weight: var(--font-weight-thin);
+    padding: 2px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(206, 206, 206, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0,
+        rgba(0, 0, 0, 0.12) 0 1px 18px 0;
 }
 
 button:hover {
-  border: 1px solid var(--dark-green);
-  background-color: var(--dark-green);
-  transition: 1s;
+    border: 1px solid var(--dark-green);
+    background-color: var(--dark-green);
+    transition: 1s;
 }

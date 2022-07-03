@@ -1,115 +1,115 @@
 .doctor_photo {
-  background-color: var(--light-green);
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
-  width: 60px;
-  margin-right: 20px;
+    background-color: var(--light-green);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
+    width: 60px;
+    margin-right: 20px;
 }
 
 .header {
-  width: 100%;
-  background: white;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  padding: 8px;
-  margin-top: 100px;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 8px;
+    margin-top: 100px;
 }
 
 .content {
-  display: flex;
-  flex: 1;
-  min-height: 68vh;
-  max-height: 68vh;
-  background: rgb(195, 191, 191);
-  flex-direction: column;
-  overflow: scroll;
-  padding: 0 20px;
+    display: flex;
+    flex: 1;
+    min-height: 68vh;
+    max-height: 68vh;
+    background: rgb(195, 191, 191);
+    flex-direction: column;
+    overflow: scroll;
+    padding: 0 20px;
 }
 
 .content > div {
-  width: 50%;
-  margin-bottom: 16px;
+    width: 50%;
+    margin-bottom: 16px;
 }
 
 .input {
-  width: 100%;
-  display: flex;
-  flex: 1;
-  margin-right: 8px;
-  border-radius: 5px;
-  border: 0.5px solid black;
-  padding: 4px;
-  padding-left: 12px;
-  font-size: 16px;
-  height: 50px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 4px;
+    padding-left: 12px;
+    font-size: 16px;
+    height: 50px;
 }
 
 .doctorChat {
-  display: flex;
-  background: green;
-  color: white;
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 20px 20px 20px 0px;
-  font-size: medium;
+    display: flex;
+    background: green;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px 20px 20px 0px;
+    font-size: medium;
 }
 
 .meChat {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .meChat > div {
-  background: blue;
-  padding: 15px;
-  border-radius: 20px 20px 0px 20px;
+    background: blue;
+    padding: 15px;
+    border-radius: 20px 20px 0px 20px;
 }
 
 .meChat > div > span {
-  color: white;
-  font-size: 16px;
+    color: white;
+    font-size: 16px;
 }
 
 .star {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 .rating {
-  display: flex;
-  flex: 1;
-  align-items: center;
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 @media screen and (max-width: 320px) {
-  .meChat > div > span {
-    font-size: small;
-  }
+    .meChat > div > span {
+        font-size: small;
+    }
 
-  .meChat > div {
-    padding: 5px 0px 10px 10px;
-    word-wrap: break-word;
-  }
+    .meChat > div {
+        padding: 5px 0px 10px 10px;
+        word-wrap: break-word;
+    }
 
-  .doctorChat {
-    font-size: small;
-  }
+    .doctorChat {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 992px) {
-  .header {
-    margin-top: 20px;
-  }
-  .meChat > div > span {
-    font-size: small;
-  }
+    .header {
+        margin-top: 20px;
+    }
+    .meChat > div > span {
+        font-size: small;
+    }
 
-  .meChat > div {
-    padding: 5px 0px 10px 10px;
-    word-wrap: break-word;
-  }
+    .meChat > div {
+        padding: 5px 0px 10px 10px;
+        word-wrap: break-word;
+    }
 
-  .doctorChat {
-    font-size: small;
-  }
+    .doctorChat {
+        font-size: small;
+    }
 }

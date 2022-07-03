@@ -9,38 +9,38 @@ const DoctorList = () => {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
+            photo: photo
         },
         {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
+            photo: photo
         },
         {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
+            photo: photo
         },
         {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
+            photo: photo
         },
         {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
+            photo: photo
         },
         {
             name: 'Nama Dokter Umum',
             rating: 5,
             price: 'Rp 20.000',
-            photo: photo,
-        },
+            photo: photo
+        }
     ]
 
     return (

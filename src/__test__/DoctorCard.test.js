@@ -5,8 +5,8 @@ import userEvent from '@testing-library/user-event'
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
     useNavigate: () => ({
-        navigate: jest.fn().mockImplementation(() => ({})),
-    }),
+        navigate: jest.fn().mockImplementation(() => ({}))
+    })
 }))
 
 describe('testing for Doctor Card document', () => {

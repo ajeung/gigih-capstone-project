@@ -5,93 +5,93 @@
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  column-gap: 7rem;
-  margin: 25vh auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 7rem;
+    margin: 25vh auto;
 }
 
 .doctor_card,
 .price_card {
-  display: flex;
-  box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
-  border: 2px solid rgb(56, 56, 56);
-  background-color: white;
-  width: 500px;
-  padding: 2rem 1.4rem;
-  padding-right: 2rem;
-  margin-bottom: 2rem;
-  align-items: center;
+    display: flex;
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+    border: 2px solid rgb(56, 56, 56);
+    background-color: white;
+    width: 500px;
+    padding: 2rem 1.4rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
 }
 
 .doctor_card {
-  padding-left: 2rem;
+    padding-left: 2rem;
 }
 
 .doctor_photo {
-  background-color: var(--light-green);
-  padding: 20px 0;
-  border-radius: 12px;
-  box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
-  margin-right: 1rem;
-  height: 140px;
-  width: 100px;
+    background-color: var(--light-green);
+    padding: 20px 0;
+    border-radius: 12px;
+    box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
+    margin-right: 1rem;
+    height: 140px;
+    width: 100px;
 }
 
 .doctor_photo > img {
-  height: 100%;
-  width: 100%;
-  margin: auto;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 .doctor_detail {
-  text-align: center;
-  border-top: 3px solid rgb(170, 170, 170);
-  border-bottom: 3px solid rgb(170, 170, 170);
-  flex-grow: 2;
-  padding: 1rem 0;
+    text-align: center;
+    border-top: 3px solid rgb(170, 170, 170);
+    border-bottom: 3px solid rgb(170, 170, 170);
+    flex-grow: 2;
+    padding: 1rem 0;
 }
 
 .doctor_detail > h4 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 1rem;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .doctor_detail > p {
-  font-size: 24px;
-  opacity: 0.8;
+    font-size: 24px;
+    opacity: 0.8;
 }
 
 .price_card {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.4rem;
-  padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.4rem;
+    padding-bottom: 2rem;
 }
 
 .price_card > h4 {
-  border-bottom: 3px solid rgb(170, 170, 170);
-  width: 98%;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 400;
-  padding: 1.5rem;
+    border-bottom: 3px solid rgb(170, 170, 170);
+    width: 98%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 1.5rem;
 }
 
 .price_card > p {
-  font-size: 32px;
-  margin-bottom: 0.85rem;
+    font-size: 32px;
+    margin-bottom: 0.85rem;
 }
 
 .comfirm_container {
-  background-color: white;
-  padding: 2rem;
-  text-align: center;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
 }
 
-.comfirm_container>button {
+.comfirm_container > button {
     width: 20%;
     height: 70px;
     font-size: x-large;
@@ -116,32 +116,32 @@
         height: 100px;
         width: 60px;
     }
-    
-    .doctor_photo>img {
+
+    .doctor_photo > img {
         height: 100%;
         width: 100%;
         margin: auto;
     }
 
-    .doctor_detail>h4 {
+    .doctor_detail > h4 {
         font-size: large;
     }
 
-    .doctor_detail>p {
+    .doctor_detail > p {
         font-size: medium;
     }
 
-    .price_card>h4 {
+    .price_card > h4 {
         font-size: large;
         padding-bottom: 10px;
     }
 
-    .price_card>p {
+    .price_card > p {
         font-size: medium;
         padding-top: 10px;
     }
 
-    .comfirm_container>button {
+    .comfirm_container > button {
         width: 50%;
         height: 50px;
         font-size: medium;
@@ -174,32 +174,32 @@
         height: 100px;
         width: 60px;
     }
-    
-    .doctor_photo>img {
+
+    .doctor_photo > img {
         height: 100%;
         width: 100%;
         margin: auto;
     }
 
-    .doctor_detail>h4 {
+    .doctor_detail > h4 {
         font-size: large;
     }
 
-    .doctor_detail>p {
+    .doctor_detail > p {
         font-size: medium;
     }
 
-    .price_card>h4 {
+    .price_card > h4 {
         font-size: large;
         padding-bottom: 10px;
     }
 
-    .price_card>p {
+    .price_card > p {
         font-size: medium;
         padding-top: 10px;
     }
 
-    .comfirm_container>button {
+    .comfirm_container > button {
         width: 50%;
         height: 50px;
         font-size: medium;
@@ -218,14 +218,14 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .content {
         display: flex;
         justify-content: center;
         column-gap: 7rem;
         margin: 25vh auto;
     }
-    
+
     .doctor_card,
     .price_card {
         display: flex;
@@ -238,11 +238,11 @@
         margin-bottom: 2rem;
         align-items: center;
     }
-    
+
     .doctor_card {
         padding-left: 2rem;
     }
-    
+
     .doctor_photo {
         background-color: var(--light-green);
         padding: 20px 0;
@@ -252,13 +252,13 @@
         height: 140px;
         width: 100px;
     }
-    
-    .doctor_photo>img {
+
+    .doctor_photo > img {
         height: 100%;
         width: 100%;
         margin: auto;
     }
-    
+
     .doctor_detail {
         text-align: center;
         border-top: 3px solid rgb(170, 170, 170);
@@ -266,18 +266,18 @@
         flex-grow: 2;
         padding: 1rem 0;
     }
-    
-    .doctor_detail>h4 {
+
+    .doctor_detail > h4 {
         font-size: 28px;
         font-weight: 400;
         margin-bottom: 1rem;
     }
-    
-    .doctor_detail>p {
+
+    .doctor_detail > p {
         font-size: 24px;
-        opacity: .8;
+        opacity: 0.8;
     }
-    
+
     .price_card {
         flex-direction: column;
         align-items: center;
@@ -285,8 +285,8 @@
         padding: 0 1.4rem;
         padding-bottom: 2rem;
     }
-    
-    .price_card>h4 {
+
+    .price_card > h4 {
         border-bottom: 3px solid rgb(170, 170, 170);
         width: 98%;
         text-align: center;
@@ -294,20 +294,20 @@
         font-weight: 400;
         padding: 1.5rem;
     }
-    
-    .price_card>p {
+
+    .price_card > p {
         font-size: 32px;
         margin-bottom: 0.85rem;
     }
-    
+
     .comfirm_container {
         background-color: white;
         padding: 2rem;
         text-align: center;
         height: 160px;
     }
-    
-    .comfirm_container>button {
+
+    .comfirm_container > button {
         width: 20%;
         height: 70px;
         font-size: x-large;

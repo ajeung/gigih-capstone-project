@@ -1,26 +1,26 @@
 .modal__wrap {
-  position: fixed;
-  display: block;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 105vh;
-  z-index: 100;
-  overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 250ms 700ms ease;
+    position: fixed;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 105vh;
+    z-index: 100;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms 700ms ease;
 }
 
 .visible {
-  pointer-events: auto;
-  opacity: 1;
-  transition: all 300ms ease-in-out;
+    pointer-events: auto;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
 }
 
 .modal {
@@ -45,7 +45,7 @@
 }
 
 .visible .modal {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }
