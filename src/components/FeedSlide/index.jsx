@@ -50,12 +50,12 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">
+                        <a href="#" className="over-layer">
                             <i className="bx bx-link"></i>
                         </a>
                     </div>
                     <div className="feeds__info">
-                        <a href="google.com">Judul Artikel</a>
+                        <a href="#">Judul Artikel</a>
                         <div className="feeds__date">
                             <i className="bx bx-time-five"></i>
                         </div>
@@ -66,12 +66,12 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">
+                        <a href="#" className="over-layer">
                             <i className="bx bx-link"></i>
                         </a>
                     </div>
                     <div className="feeds__info">
-                        <a href="google.com">Judul Artikel</a>
+                        <a href="#">Judul Artikel</a>
                         <div className="feeds__date">
                             <i className="bx bx-time-five"></i>
                         </div>
@@ -82,12 +82,12 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">
+                        <a href="#" className="over-layer">
                             <i className="bx bx-link"></i>
                         </a>
                     </div>
                     <div className="feeds__info">
-                        <a href="google.com">Judul Artikel</a>
+                        <a href="#">Judul Artikel</a>
                         <div className="feeds__date">
                             <i className="bx bx-time-five"></i>
                         </div>
@@ -98,12 +98,12 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">
+                        <a href="#" className="over-layer">
                             <i className="bx bx-link"></i>
                         </a>
                     </div>
                     <div className="feeds__info">
-                        <a href="google.com">Judul Artikel</a>
+                        <a href="#">Judul Artikel</a>
                         <div className="feeds__date">
                             <i className="bx bx-time-five"></i>
                         </div>
@@ -114,12 +114,12 @@ const FeedComponent = () => {
                 <div className="feeds__content">
                     <div className="feeds__image">
                         <img src="https://i.ibb.co/ZmhmVfx/Find-My.jpg" alt="" />
-                        <a href="google.com" className="over-layer">
+                        <a href="#" className="over-layer">
                             <i className="bx bx-link"></i>
                         </a>
                     </div>
                     <div className="feeds__info">
-                        <a href="google.com">Judul Artikel</a>
+                        <a href="#">Judul Artikel</a>
                         <div className="feeds__date">
                             <i className="bx bx-time-five"></i>
                         </div>
