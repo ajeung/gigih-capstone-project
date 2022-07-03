@@ -51,7 +51,7 @@ export default function ChatDoctor() {
 
   return (
     <div
-      style={{ display: "flex", flex: 1, flexDirection: "column", padding: 4 }}
+      style={{ display: "flex", flex: 1, flexDirection: "column", padding: 4, marginTop: 50}}
     >
       <div className={styles.header}>
         <div className={styles.doctor_photo}>

@@ -44,7 +44,7 @@
 }
 
 /* ===========================================BASE */
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -86,14 +86,14 @@ button {
 }
 img {
   height: auto;
-}
+} */
 
 /* ===========================REUSABLE CSS CLASSES */
-.container {
+/* .container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 /*-----------------------------------HEADER n NAV */
 .header {
   background-color: var(--header-bg-color);
