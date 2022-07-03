@@ -31,7 +31,7 @@ export default function ChatDoctor() {
   }, [chats.length]);
 
   const sendChat = React.useCallback(
-    (e) => {
+    (e: { preventDefault: () => void; }) => {
       e.preventDefault();
       set(ref(database, `chats/${name}/${chats.length + 1}`), {
         message: input,
@@ -51,7 +51,7 @@ export default function ChatDoctor() {
 
   return (
     <div
-      style={{ display: "flex", flex: 1, flexDirection: "column", padding: 4 }}
+      style={{ display: "flex", flex: 1, flexDirection: "column", padding: 4, marginTop: 50}}
     >
       <div className={styles.header}>
         <div className={styles.doctor_photo}>
@@ -60,13 +60,6 @@ export default function ChatDoctor() {
         <div>
           <h4>{name}</h4>
           <h5>{specialist}</h5>
-          {/* <div className={styles.rating}>
-            <img src="/star.png" className={styles.star} alt="star" />
-            <img src="/star.png" className={styles.star} alt="star" />
-            <img src="/star.png" className={styles.star} alt="star" />
-            <img src="/star.png" className={styles.star} alt="star" />
-            <img src="/star.png" className={styles.star} alt="star" />
-          </div> */}
         </div>
       </div>
       <div className={styles.content}>

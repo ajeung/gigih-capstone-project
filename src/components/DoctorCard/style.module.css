@@ -1,62 +1,199 @@
-.container {
-  display: flex;
-  box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
-  background-color: white;
-  width: 500px;
-  padding: 2rem 1.4rem;
-  padding-right: 2rem;
-  align-items: center;
-  cursor: pointer;
+.containerDoctorCard {
+    height: 180px;
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 2rem 1.4rem;
+    padding-right: 2rem;
+    align-items: center;
+    cursor: pointer;
 }
 
-.container:hover {
-  box-shadow: 4px 8px 8px -3px rgba(0, 0, 0);
-}
-
-.star {
-  width: 19px;
-  height: 19px;
-}
-
-.rating > h3 {
-  margin-right: 0.2rem;
+.containerDoctorCard:hover {
+    box-shadow: 4px 8px 8px -3px rgba(0, 0, 0);
 }
 
 .doctor_photo {
-  background-color: var(--light-green);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
-  margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: var(--light-green);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
+    margin-right: 1rem;
 }
 
 .doctor_detail {
-  display: grid;
-  grid-template-rows: 100% 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.doctor_detail > .top > p {
-  width: 60%;
+.top p {
+    font-size: medium;
 }
 
-.doctor_detail p {
-  font-weight: 300;
-  font-size: 24px;
+.rating p {
+    font-size: small;
+    color: grey;
+    margin-right: 0.2rem;
 }
 
-.rating {
-  margin: 10px 0;
+.btn_container>button {
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.price {
-  font-size: 20px !important;
-  font-weight: 100;
-  width: 40% !important;
-  text-align: end;
-  opacity: 0.8;
-}
 
-.btn_container > button {
-  font-size: 20px;
-  font-weight: 600;
-}
+  /* Small Devices & Medium Devices */
+    @media screen and (max-width: 320px) {
+        .containerDoctorCard {
+            text-align: center;
+            height: 180px;
+            width: 100%;
+            padding: 18px 10px;
+        }
+
+        .doctor_photo {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+            padding: 10px 5px;
+        }
+
+        .doctor_photo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .doctor_detail {
+            gap: 0.5px;
+            margin: 15px 0;
+        }
+
+        .btn_container button {
+            font-size: 14px;
+        }
+
+        .top p {
+            font-size: small;
+        }
+        
+        .rating p {
+            font-size: x-small;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        .containerDoctorCard {
+            text-align: center;
+            height: 180px;
+            width: 100%;
+            padding: 18px 10px;
+        }
+
+        .doctor_photo {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+        }
+
+        .doctor_photo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .doctor_detail {
+            gap: 0.5px;
+            margin: 15px 0;
+        }
+
+        .btn_container button {
+            font-size: 14px;
+        }
+
+        .top p {
+            font-size: small;
+        }
+        
+        .rating p {
+            font-size: x-small;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .containerDoctorCard {
+            padding: 15px 10px;
+            text-align: left;
+            display: flex;
+        }
+
+        .doctor_photo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 15px 5px;
+        }
+
+        .doctor_photo img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .doctor_detail {
+            gap: 2px;
+            margin: 15px;
+        }
+
+        .top p {
+            font-size: medium;
+        }
+        
+        .rating p {
+            font-size: small;
+        }
+        
+    }
+  /* Large Devices */
+    @media screen and (min-width: 992px) {
+        .containerDoctorCard {
+            padding: 2rem 1.4rem;
+            padding-right: 2rem;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .doctor_photo {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: var(--light-green);
+            padding: 15px 5px;
+            border-radius: 12px;
+            box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
+            margin-right: 1rem;
+        }
+        
+        .doctor_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .top p {
+            font-size: medium;
+        }
+        
+        .rating p {
+            font-size: small;
+            color: grey;
+            margin-right: 0.2rem;
+        }
+        
+        .btn_container>button {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }

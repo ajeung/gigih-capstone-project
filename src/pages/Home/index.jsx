@@ -1,53 +1,42 @@
-import styles from './style.module.css'
-import * as React from 'react'
-import HintCard from '../../components/HintCard'
+import FeedComponent from '../../components/FeedSlide';
+import img_consultation from '../../assets/consultation.jpg';
+import img_pharmacy from '../../assets/pharmacy.jpg';
+import img_checkup from '../../assets/checkup.jpg';
+
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
-    const HINTS = React.useMemo(
-        () => [
-            {
-                label: 'Cari Dokter',
-                img: '/dokter.png',
-                title: 'Mau tanya dokter ?',
-                url: '/search-doctor',
-            },
-            { label: 'Toko', img: '/toko.png', title: 'Mencari obat ?', url: '/' },
-            {
-                label: 'Medical Check Up',
-                img: '/checkup.png',
-                title: 'Medical check up ?',
-                url: '/',
-            },
-        ],
-        []
-    )
+    const navigate = useNavigate()
+
     return (
-        <div className={styles.root}>
-            <div className={styles.top}>
-                <h6
-                    style={{
-                        fontSize: 40,
-                    }}
-                >
-          SOLUHOUSE
-                </h6>
-                <h6
-                    style={{
-                        fontSize: 24,
-                        fontWeight: '100',
-                    }}
-                >
-          menjawab kekhawatiran anda
-                </h6>
-            </div>
-            <div className={styles.hintContainer}>
-                {HINTS.map((e, idx) => (
-                    <React.Fragment key={idx.toString()}>
-                        <HintCard {...e} />
-                        <div className={styles.divider} />
-                    </React.Fragment>
-                ))}
-            </div>
+        <div className='home__container'>
+            <section className='menu'>
+                <div className="menu__wrapper">
+                    <div className='menu__intro'>
+                        <h1>SoluHouse</h1>
+                        <p>Menjawab Kekhawatiran Anda</p>
+                    </div>
+                    <div className="menu__container">
+                        <div className='menu__cards' onClick={() => navigate('/search-doctor')}>
+                            <img className='menu__icon' src={img_consultation} alt="" />
+                            <p>Konsultasi</p>
+                        </div>
+                        <div className='menu__cards'>
+                            <img className='menu__icon' src={img_pharmacy} alt="" />
+                            <p>Apotek</p>
+                        </div>
+                        <div className='menu__cards'>
+                            <img className='menu__icon' src={img_checkup} alt="" />
+                            <p>Cek Kesehatan</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='feeds'>
+                <FeedComponent />
+            </section>
         </div>
     )
 }

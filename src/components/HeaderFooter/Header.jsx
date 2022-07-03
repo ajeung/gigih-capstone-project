@@ -2,7 +2,7 @@ import styles from './style.module.css'
 import logoHeader from '../../assets/logo.png'
 
 import Modal from '../Modal'
-import { auth, provider } from '../../redux/firebase-config/firebase'
+import { auth, provider } from '../../config/firebase-config/firebase'
 import {
     setActiveUser,
     setUserLogoutState,
@@ -10,12 +10,10 @@ import {
 } from '../../redux/reducer/reducers'
 
 import { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
 const Header = () => {
-    const navigate = useNavigate()
-
     const dispatch = useDispatch()
     const userName = useSelector(selectUserName)
 
@@ -52,9 +50,8 @@ const Header = () => {
                 </a>
             </div>
 
-            <a
-                className="header__icon-arrow"
-                href="/"
+
+            <a className='header__icon-arrow'
                 onClick={() => {
                     setIsExpanded(!isExpanded)
                 }}
@@ -71,14 +68,12 @@ const Header = () => {
                         <Link to="">Artikel</Link>
                     </li>
                     <li>
-                        <Link to="/search-doctor">Cari Dokter</Link>
+                        <Link to="/search-doctor">Cari Mentor</Link>
                     </li>
                 </ul>
             </div>
             <div className={`header-button ${userName ? styles.hidden : ''}`}>
-                <button id="loginBtn" onClick={() => setShowHanphoneModal(true)}>
-          Login
-                </button>
+                <button id={styles.loginBtn} onClick={() => setShowHanphoneModal(true)}>Login</button>
             </div>
 
             <Modal
@@ -87,36 +82,14 @@ const Header = () => {
             >
                 <div className={styles.content}>
                     <h4>Login ke dalam SoluHouse</h4>
-                    <div
-                        onClick={() => {
-                            setShowHanphoneModal(false)
-                            handleLogin()
-                        }}
-                    >
-                        <button className="sign-in">Login with Google</button>
-                    </div>
+                    <div onClick={() => { setShowHanphoneModal(false); handleLogin() }}>
+                        <button className={styles.signin}>Login with Google</button>
+                    </div>      
                 </div>
             </Modal>
 
-            <div
-                className={`is__loggedin ${userName ? '' : styles.hidden}`}
-                onClick={() => setShowOptionDropdown(!showOptionDropdown)}
-            >
-                <div className="profile__icon"></div>
-                <div className="profile__options">
-                    <span className="profile__icon-arrow">
-                        <i className="bx bxs-down-arrow"></i>
-                    </span>
-                    <div
-                        className={`profile__icon-dropdown ${
-                            showOptionDropdown ? '' : styles.hidden
-                        }`}
-                    >
-                        <p onClick={() => navigate('/view-profile')}>View Profile</p>
-                        <p onClick={() => navigate('/edit-profile')}>Edit Profile</p>
-                        <p onClick={handleLogout}>Logout</p>
-                    </div>
-                </div>
+            <div className={`header-button is__loggedin ${userName ? '' : styles.hidden}`} onClick={() => setShowOptionDropdown(!showOptionDropdown)}>
+                <button id={styles.loginBtn} onClick={() => handleLogout()}>Logout</button>
             </div>
         </div>
     )

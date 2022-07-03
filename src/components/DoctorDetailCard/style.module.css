@@ -1,7 +1,6 @@
 .container {
   width: 86%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .content {
@@ -119,4 +118,299 @@
 
 .actionContainer {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 86%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    display: grid;
+    align-items: center;
+    height: 550px;
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .profilePicture {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+  }
+
+  .left, .right {
+    display: inline-block;
+  }
+
+  .left {
+    padding-top: 30px;
+  }
+
+  .right {
+    margin-left: 0;
+    margin: 0 20px;
+  }
+
+  .starContainer {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .starContainer > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .infoContainer {
+    padding: 5px;
+    
+  }
+
+  .item {
+    padding-bottom: 5px;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .item > div:first-child {
+    font-size: small;
+  }
+  
+  .item > div:last-child {
+    font-size: small;
+  }
+
+  .headerContainer > h6:first-child {
+    font-size: medium;
+    margin-bottom: 2px;
+  }
+  .headerContainer > h6:last-child {
+    font-size: small;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .button > button {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 86%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    display: grid;
+    align-items: center;
+    height: 500px;
+    margin-top: 80px;
+    padding: 0;
+  }
+
+  .profilePicture {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+
+  .left, .right {
+    display: inline-block;
+  }
+
+  .left {
+    padding: 20px 0;
+  }
+
+  .right {
+    margin-left: 0;
+    margin: 0 30px;
+  }
+
+  .starContainer {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .starContainer > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .infoContainer {
+    padding: 5px;
+    
+  }
+
+  .item {
+    padding-bottom: 5px;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .item > div:first-child {
+    font-size: small;
+  }
+  
+  .item > div:last-child {
+    font-size: small;
+  }
+
+  .headerContainer > h6:first-child {
+    font-size: medium;
+    margin-bottom: 2px;
+  }
+  .headerContainer > h6:last-child {
+    font-size: small;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .button > button {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .content {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 86%;
+    margin: 0 auto;
+  }
+  
+  .content {
+    height: 650px;
+    display: flex;
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 1.3em 2.3em;
+    align-items: center;
+    width: auto;
+    margin-top: 80px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2em;
+  }
+  
+  .profilePicture {
+    background-color: var(--light-green);
+    padding: 0.3em 0.3em 0.3em;
+    border-radius: 12%;
+    height: 340px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 1px 6px -2px rgba(0, 0, 0, 0.75);
+    justify-content: center;
+  }
+  
+  .profilePicture > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .starContainer {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  
+  .starContainer > img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .headerContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+  }
+  
+  .headerContainer > h6:first-child {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+  .headerContainer > h6:last-child {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .infoContainer {
+    border: 2px solid #000;
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 12px;
+    align-items: center;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  .item > div:first-child {
+    font-size: 32px;
+    font-weight: 300;
+    margin-right: 20px;
+  }
+  
+  .item > div:last-child {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button > button {
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+  }
+  
+  .actionContainer {
+    margin-top: 20px;
+  }
 }

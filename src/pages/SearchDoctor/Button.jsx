@@ -4,13 +4,16 @@ import styles from './style.module.css'
 const Buttons = ({ filterItem, setItem, menuItems }) => {
     return (
         <div className={styles.kategoriDoctor}>
-            {menuItems.map((doctor, id) => {
-                return (
-                    <button onClick={() => filterItem(doctor)} key={id}>
-                        {doctor}
-                    </button>
-                )
-            })}
+          {menuItems.map((doctor, id) => {
+            return (
+              <button className={styles.categoriesButton}
+                onClick={() => filterItem(doctor)}
+                key={id}
+              >
+                {doctor}
+              </button>
+            );
+          })}
         </div>
     )
 }

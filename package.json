@@ -29,10 +29,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --fix"
-
   },
   "eslintConfig": {
-    "extends":[
+    "extends": [
       "react-app",
       "react-app/jest"
     ]
@@ -51,16 +50,11 @@
   },
   "devDependencies": {
     "@redux-devtools/core": "^3.13.1",
-<<<<<<< HEAD
-    "typescript": "^4.7.4",
-    "typescript-plugin-css-modules": "^3.4.0"
-=======
     "@typescript-eslint/eslint-plugin": "^5.30.1",
     "@typescript-eslint/parser": "^5.30.1",
     "eslint": "^8.18.0",
     "eslint-plugin-react": "^7.30.1",
     "typescript": "^4.7.4"
->>>>>>> main
   },
   "firebase-config": {
     "output": "public/",

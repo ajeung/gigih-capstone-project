@@ -1,9 +1,7 @@
-import star from '../../assets/img/star.png'
-import { useNavigate } from 'react-router-dom'
-import styles from './style.module.css'
+import { useNavigate } from "react-router-dom";
+import styles from "./style.module.css";
 
-const DoctorCard = ({ name, rating, price, photo }) => {
-<<<<<<< HEAD
+const DoctorCard = ({ name, speciality, title, photo }) => {
   const navigate = useNavigate();
 
   const handleClick = (id) => {
@@ -11,18 +9,16 @@ const DoctorCard = ({ name, rating, price, photo }) => {
   };
 
   return (
-    <div className={styles.container} onClick={() => handleClick(name)}>
+    <div className={styles.containerDoctorCard} onClick={() => handleClick(name)}>
       <div className={styles.doctor_photo}>
-        <img src={photo} alt={`Doctor ${name}`} />
+        <img src={photo} alt={`${name}`} />
       </div>
       <div className={styles.doctor_detail}>
         <div className={styles.top}>
-          <p>{name}</p>
-          <p className={styles.price}>{price}</p>
+          <p>{name} {title}</p>
         </div>
         <div className={styles.rating}>
-          <p>{rating}</p>
-          <img src={star} className={styles.star} alt="star" />
+          <p>{speciality}</p>
         </div>
         <div className={styles.btn_container}>
           <button type="button">Chat</button>
@@ -33,34 +29,3 @@ const DoctorCard = ({ name, rating, price, photo }) => {
 };
 
 export default DoctorCard;
-=======
-    const navigate = useNavigate()
-
-    const handleClick = (id) => {
-        navigate(`/doctor/${id}`)
-    }
-
-    return (
-        <div className={styles.container} onClick={() => handleClick(1)}>
-            <div className={styles.doctor_photo}>
-                <img src={photo} alt={`Doctor ${name}`} />
-            </div>
-            <div className={styles.doctor_detail}>
-                <div className={styles.top}>
-                    <p>{name}</p>
-                    <p className={styles.price}>{price}</p>
-                </div>
-                <div className={styles.rating}>
-                    <p>{rating}</p>
-                    <img src={star} className={styles.star} alt="star" />
-                </div>
-                <div className={styles.btn_container}>
-                    <button type="button">Chat</button>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default DoctorCard
->>>>>>> main

@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 2rem;
+}
+
+.content>h4 {
+    font-weight: 200;
+    font-size: large;
+    margin: 30px auto;
+    padding: 1rem;
+}
+
+.content>p {
+    padding-bottom: 2rem;
+}
+
+.content span {
+    font-weight: bold;
+    color: #0e8e72;
+}
+
+.signin {
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}

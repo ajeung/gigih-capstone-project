@@ -23,21 +23,93 @@
   margin-top: 2rem;
 }
 
-.kategoriDoctor {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+.kategoriDoctor{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.categoriesButton{
+    font-size: medium;
+    margin: 0 10px;
+    padding: 10px 10px;
 }
 
-.listOfDoctor {
-  margin: 30px 30px 0 30px;
-  display: grid;
-  grid-column-end: 2;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 33.33% 33.33% 33.33%;
-  grid-gap: 63px;
+.listOfDoctor{
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px;
+    display: grid;
+    grid-column-end: 2;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
 }
 
 .card {
-  width: 100%;
-  margin-right: 0 !important;
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+@media screen and (max-width: 320px) {
+    .kategoriDoctor{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .categoriesButton{
+        width: 80%;
+        font-size: small;
+        margin: 0 10px;
+        padding: 5px 3px;
+    }
+
+    .listOfDoctor{
+        align-items: center;
+        justify-content: center;
+        margin: 30px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .kategoriDoctor{
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 10px;
+    }
+    .categoriesButton{
+        font-size: small;
+        margin: 0 10px;
+        padding: 5px 3px;
+        height: 50px;
+    }
+
+    .listOfDoctor{
+        align-items: center;
+        justify-content: center;
+        margin: 30px 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .kategoriDoctor{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-gap: 5px;
+    }
+    .categoriesButton{
+        font-size: medium;
+        padding: 10px 10px;
+        height: 70px;
+    }
+    
+    .listOfDoctor{
+        grid-column-end: 2;
+        grid-template-columns: 30% 30% 30%;
+    }
 }

@@ -105,7 +105,7 @@ img {
 /*================ SCROLL BAR ================*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: var(--lite-grey);
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -134,6 +134,7 @@ img {
   height: 52px;
   width: 100%;
   position: fixed;
+  z-index: 3;
 }
 .header-link {
   margin: 0px 0px;
@@ -150,14 +151,18 @@ img {
   border: 0;
   height: 58px;
   width: 40px;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   cursor: pointer;
   color: var(--main-font-color);
   font-size: var(--font-normal-size);
   position: absolute;
   top: 50%;
-  right: 25px;
+  left: 10px;
   transform: translateY(-50%);
+}
+
+.header-button{
+  margin-bottom: 5px;
 }
 
 .header__icon-arrow:hover {
@@ -174,52 +179,6 @@ img {
   cursor: pointer;
 }
 
-.profile__options {
-  position: relative;
-  display: inline-block;
-}
-
-.profile__icon {
-  display: inline-block;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-color: #6bedd0;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.profile__icon-arrow {
-  float: right;
-  margin: 5px;
-  font-size: var(--font-smaller-size);
-}
-
-.profile__icon-dropdown {
-  position: absolute;
-  background-color: #fff;
-  min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 7px 16px;
-  z-index: 1;
-  top: 40px;
-  left: auto;
-  right: 0;
-}
-
-.profile__icon-dropdown p {
-  font-size: var(--font-smaller-size);
-  padding: 5px 0;
-}
-
-.profile__icon-dropdown p:hover {
-  color: var(--light-green);
-}
-
 /*================ FOOTER ================*/
 
 /*================ BUTTON ================*/
@@ -232,7 +191,7 @@ button:hover {
 /* ================ HOME ================ */
 /* HOME */
 .menu {
-  padding: 14vh 0;
+  padding: 18vh 0;
   background-image: url(./assets/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -390,6 +349,10 @@ button:hover {
 /*================ BREAKPOINTS ================*/
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+
   .header__icon-arrow {
     display: block;
   }
@@ -411,7 +374,7 @@ button:hover {
     margin: 0;
   }
 
-  .header-link li a {
+  .header-link li {
     width: 100%;
     padding: 0.5rem 0;
   }
@@ -424,18 +387,21 @@ button:hover {
   .header-link.expanded ul {
     display: block;
   }
-  .header-button {
-    margin: 0 30px;
-  }
-  .is__loggedin {
-    margin: 0 50px;
-  }
 }
 
 /* Small Devices & Medium Devices */
 @media screen and (max-width: 320px) {
   .slick-slide > div {
     margin: 0 15px;
+  }
+
+  .containerDoctorCard {
+    box-shadow: 0px 8px 8px -3px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 2rem 1.4rem;
+    padding-right: 2rem;
+    align-items: center;
+    cursor: pointer;
   }
 
   .slick-slide {
@@ -452,10 +418,6 @@ button:hover {
 
   #headerLogo {
     width: 100px;
-  }
-
-  .header__icon-arrow {
-    padding: 9px 0 8px 20px;
   }
 
   .footer {
@@ -488,7 +450,7 @@ button:hover {
 
   .menu__wrapper,
   .feeds__wrapper {
-    margin: 0 30px;
+    margin: 0 15px;
   }
 
   .menu__intro h1 {
@@ -502,7 +464,7 @@ button:hover {
   .menu__container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1px;
   }
 
   .menu__cards {
