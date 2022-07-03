@@ -38,24 +38,28 @@ This application was build using [React.js](https://reactjs.org/docs/getting-sta
    npm start
    ```
 
+## Demo
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/86681678/177042155-7c2cf18e-1cfd-44a6-bd73-a3f8437dcf27.gif)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/86681678/177042344-fa7d5e11-dfbc-4fec-a363-f4b816874d50.gif)
+
 ## Features
 ### Login Page
 To access the main feature, please log in with your google account. Use the log in button on the upper right side of the screen.
-![WhatsApp Image 2022-07-02 at 7 23 37 PM](https://user-images.githubusercontent.com/86681678/177004780-05ccc246-f72a-4188-8f58-854e49d4cfd7.jpeg)
+![login](https://user-images.githubusercontent.com/86681678/177042133-9ab9b5c2-f9bb-45dc-81c0-e8f30a70dcc0.jpg)
 
 ### Text Consultation (Featured)
 To make a consultation, first, you should choose the mentor that related to your problem. You can do that by clicking the categories button and it will automatically sort the mentor by their speciality.
-![WhatsApp Image 2022-07-02 at 7 15 25 PM](https://user-images.githubusercontent.com/86681678/177004799-0497f810-33e2-4cf1-9db4-e53501e77b25.jpeg)
+![list dokter](https://user-images.githubusercontent.com/86681678/177042182-92023221-6923-47fa-8530-b3c05d70c7ea.jpg)
 
 Choose the mentor that you would like to consult, then click the chat button. It will direct you to the page that show the details of the mentor. Click chat again to continue, or click back to get to the previous page.
-![WhatsApp Image 2022-07-02 at 9 51 34 PM](https://user-images.githubusercontent.com/86681678/177005954-e6d16df9-8b73-466a-8bb3-29f0d8be44b9.jpeg)
+![detail dokter](https://user-images.githubusercontent.com/86681678/177042201-8ff0ba6a-05aa-4b09-8d18-83d586261c7e.jpg)
 
 After that, you will be directed to the payment page.
-![WhatsApp Image 2022-07-02 at 9 51 39 PM](https://user-images.githubusercontent.com/86681678/177005947-1341ad51-2b20-415f-8997-95287b39927d.jpeg)
-![WhatsApp Image 2022-07-02 at 9 51 54 PM](https://user-images.githubusercontent.com/86681678/177005952-070c4514-48ad-4a3c-a0d2-e51d3ff1c9dc.jpeg)
+![payment](https://user-images.githubusercontent.com/86681678/177042223-356eb064-aac5-414c-87c6-8045c3c27ce5.jpg)
+![confirm payment](https://user-images.githubusercontent.com/86681678/177042251-04407a13-6efd-4bf1-853f-1d012ecaa9fd.jpg)
 
 If the payment is confirmed, you will be directed to the chat page. Now, you can privately consult your problems with one of our best mentor!
-![WhatsApp Image 2022-07-02 at 9 52 03 PM](https://user-images.githubusercontent.com/86681678/177005939-e8c0c619-6a51-44f7-8f02-722012aaedfb.jpeg)
+![chat](https://user-images.githubusercontent.com/86681678/177042316-119a68dc-224a-4669-a9d7-c985c167494c.jpg)
 
 ### Health Article Section
 This page is still under construction. However, you still can see the preview on the bottom landing page.
