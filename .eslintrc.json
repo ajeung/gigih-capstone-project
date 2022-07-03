@@ -31,6 +31,8 @@
     "indent": ["error", 4],
     "linebreak-style": 0,
     "quotes": ["error", "single"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "prettier/prettier": 0,
+    "@typescript-eslint/no-empty-interface": "off"
   }
 }
