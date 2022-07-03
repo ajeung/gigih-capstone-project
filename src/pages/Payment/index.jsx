@@ -32,7 +32,7 @@ const Payment = () => {
       </div>
       <div className={styles.stickyPay}>
         <div className={styles.button}>
-          <button type="button" style={{ marginRight: 0 }} onClick={() => navigate("price-detail")} >
+          <button type="button" aria-label="bayar" style={{ marginRight: 0 }} onClick={() => navigate("price-detail")} >
             Bayar
           </button>
         </div>
