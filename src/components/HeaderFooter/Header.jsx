@@ -19,7 +19,7 @@ const Header = () => {
     const [showOptionDropdown, setShowOptionDropdown] = useState(false)
 
     const handleLogin = () => {
-        auth.signInWithPopup(provider).then((result) => {
+        auth.signInWithRedirect(provider).then((result) => {
             dispatch(
                 setActiveUser({
                     userName: result.user.displayName,
