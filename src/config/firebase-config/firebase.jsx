@@ -4,7 +4,7 @@ import 'firebase/compat/firestore'
 
 const firebaseConfig = {
     apiKey: 'AIzaSyAyl7zNqJ4MY-hcwel7jYT97rq6S020GhU',
-    authDomain: process.env.REACT_APP_AUTH_DOM,
+    authDomain: 'soluhouse2022.firebaseapp.com',
     projectId: 'soluhouse2022',
     storageBucket: 'soluhouse2022.appspot.com',
     messagingSenderId: '1022303014861',
